@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>eb299344-6506-48b2-b89b-ea6d386c3805</ProjectGuid>
+    <ProjectGuid>b92228d5-a724-4026-8f23-e366c911509d</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pjr_Capa_Datos</RootNamespace>
-    <AssemblyName>Pjr_Capa_Datos</AssemblyName>
+    <RootNamespace>Pjr_Capa_Entidad</RootNamespace>
+    <AssemblyName>Pjr_Capa_Entidad</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
