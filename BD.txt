@@ -1,0 +1,45 @@
+CREATE TABLE Clientes (
+    IdCliente INT IDENTITY(1,1) PRIMARY KEY,
+    NombreCompleto VARCHAR(100),
+    Correo VARCHAR(100),
+    Telefono VARCHAR(20),
+    Direccion VARCHAR(200),
+    Garantia VARCHAR(100),
+    Sueldo DECIMAL(18,2)
+);
+
+CREATE TABLE Prestamos (
+    IdPrestamo INT IDENTITY(1,1) PRIMARY KEY,
+    IdCliente INT FOREIGN KEY REFERENCES Clientes(IdCliente),
+    Monto DECIMAL(18,2),
+    PlazoMeses INT,
+    TasaInteres DECIMAL(18,2),
+    FechaInicio DATE,
+    Estado VARCHAR(20)
+);
+
+CREATE TABLE Pagos (
+    IdPago INT IDENTITY(1,1) PRIMARY KEY,
+    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
+    FechaPago DATE,
+    MontoAbonado DECIMAL(18,2),
+    InteresPagado DECIMAL(18,2),
+    MontoPendiente DECIMAL(18,2)
+);
+
+CREATE TABLE Amortizaciones (
+    IdAmortizacion INT IDENTITY(1,1) PRIMARY KEY,
+    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
+    Mes INT,
+    Cuota DECIMAL(18,2),
+    Interes DECIMAL(18,2),
+    Amortizacion DECIMAL(18,2),
+    Saldo DECIMAL(18,2)
+);
+
+CREATE TABLE Moras (
+    IdMora INT IDENTITY(1,1) PRIMARY KEY,
+    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
+    FechaMora DATE,
+    MontoMora DECIMAL(18,2)
+);
