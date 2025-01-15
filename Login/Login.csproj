@@ -95,5 +95,15 @@
   <ItemGroup>
     <None Include="Resources\AETERNUM.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pjr_Capa_Entidad\Pjr_Capa_Entidad.csproj">
+      <Project>{b92228d5-a724-4026-8f23-e366c911509d}</Project>
+      <Name>Pjr_Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjr_Capa_Negocio\Pjr_Capa_Negocio.csproj">
+      <Project>{e3f1e176-fdc5-4aeb-97f4-6c80c4964b16}</Project>
+      <Name>Pjr_Capa_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
