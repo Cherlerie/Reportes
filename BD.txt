@@ -1,45 +1,76 @@
-CREATE TABLE Clientes (
-    IdCliente INT IDENTITY(1,1) PRIMARY KEY,
-    NombreCompleto VARCHAR(100),
-    Correo VARCHAR(100),
-    Telefono VARCHAR(20),
-    Direccion VARCHAR(200),
-    Garantia VARCHAR(100),
-    Sueldo DECIMAL(18,2)
-);
+CREATE DATABASE PrestamosDB;
+GO
 
-CREATE TABLE Prestamos (
-    IdPrestamo INT IDENTITY(1,1) PRIMARY KEY,
-    IdCliente INT FOREIGN KEY REFERENCES Clientes(IdCliente),
-    Monto DECIMAL(18,2),
-    PlazoMeses INT,
-    TasaInteres DECIMAL(18,2),
-    FechaInicio DATE,
-    Estado VARCHAR(20)
+USE PrestamosDB;
+GO
+
+
+CREATE TABLE Cliente (
+    ClienteID INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Apellido NVARCHAR(100) NOT NULL,
+    Correo NVARCHAR(100) NOT NULL UNIQUE,
+    Telefono NVARCHAR(20),
+    Direccion NVARCHAR(MAX),
+    Usuario NVARCHAR(50) NOT NULL UNIQUE,
+    Contraseña NVARCHAR(255) NOT NULL, 
+    Rol NVARCHAR(20) NOT NULL CHECK (Rol IN ('Cliente', 'Administrador'))
 );
+GO
+
+CREATE TABLE Interes (
+    InteresID INT IDENTITY(1,1) PRIMARY KEY,
+    Meses INT NOT NULL,
+    Porcentaje DECIMAL(5,2) NOT NULL
+);
+GO
+
+CREATE TABLE Fondo (
+    FondoID INT IDENTITY(1,1) PRIMARY KEY,
+    MontoDisponible DECIMAL(15,2) NOT NULL DEFAULT 5000000
+);
+GO
 
 CREATE TABLE Pagos (
-    IdPago INT IDENTITY(1,1) PRIMARY KEY,
-    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
-    FechaPago DATE,
-    MontoAbonado DECIMAL(18,2),
-    InteresPagado DECIMAL(18,2),
-    MontoPendiente DECIMAL(18,2)
+    PagoID INT IDENTITY(1,1) PRIMARY KEY,
+    ClienteID INT NOT NULL FOREIGN KEY REFERENCES Cliente(ClienteID),
+    PrestamoID INT NOT NULL,
+    MontoAnterior DECIMAL(15,2) NOT NULL,
+    InteresPagado DECIMAL(15,2) NOT NULL,
+    InteresAPagar DECIMAL(15,2) NOT NULL,
+    MontoAbonado DECIMAL(15,2) NOT NULL,
+    MontoPendiente DECIMAL(15,2) NOT NULL,
+    FechaPago DATE NOT NULL DEFAULT GETDATE()
 );
+GO
 
-CREATE TABLE Amortizaciones (
-    IdAmortizacion INT IDENTITY(1,1) PRIMARY KEY,
-    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
-    Mes INT,
-    Cuota DECIMAL(18,2),
-    Interes DECIMAL(18,2),
-    Amortizacion DECIMAL(18,2),
-    Saldo DECIMAL(18,2)
-);
 
 CREATE TABLE Moras (
-    IdMora INT IDENTITY(1,1) PRIMARY KEY,
-    IdPrestamo INT FOREIGN KEY REFERENCES Prestamos(IdPrestamo),
-    FechaMora DATE,
-    MontoMora DECIMAL(18,2)
+    MoraID INT IDENTITY(1,1) PRIMARY KEY,
+    ClienteID INT NOT NULL FOREIGN KEY REFERENCES Cliente(ClienteID),
+    CantidadMora DECIMAL(15,2) NOT NULL DEFAULT 0
+);
+GO
+
+CREATE TABLE Usuarios (
+    UsuarioID INT IDENTITY(1,1) PRIMARY KEY,
+    ClienteID INT NOT NULL FOREIGN KEY REFERENCES Cliente(ClienteID),
+    Usuario NVARCHAR(50) NOT NULL UNIQUE,
+    Contraseña NVARCHAR(255) NOT NULL, 
+    Rol NVARCHAR(20) NOT NULL CHECK (Rol IN ('Cliente', 'Administrador'))
+);
+GO
+
+INSERT INTO Fondo (MontoDisponible)
+VALUES (5000000);
+GO
+
+CREATE TABLE Prestamos (
+    PrestamoID INT IDENTITY(1,1) PRIMARY KEY,
+    ClienteID INT NOT NULL FOREIGN KEY REFERENCES Cliente(ClienteID),
+    MontoPrestamo DECIMAL(15,2) NOT NULL,
+    TiempoMeses INT NOT NULL,
+    InteresGenerado AS (MontoPrestamo * (TiempoMeses * 0.01)) PERSISTED, -- Columna calculada persistente
+    MontoTotal AS (MontoPrestamo + (MontoPrestamo * (TiempoMeses * 0.01))) PERSISTED, -- Columna calculada persistente
+    FechaCreacion DATE NOT NULL DEFAULT GETDATE()
 );
