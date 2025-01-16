@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblname = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblpassword = new System.Windows.Forms.Label();
             this.btn_signin = new System.Windows.Forms.Button();
             this.passwordtxt = new System.Windows.Forms.TextBox();
             this.usernametxt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -56,6 +56,26 @@
             this.panel1.Size = new System.Drawing.Size(703, 816);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Location = new System.Drawing.Point(204, 226);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(106, 22);
+            this.lblname.TabIndex = 6;
+            this.lblname.Text = "Username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(201, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 38);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Login Account";
             // 
             // lblpassword
             // 
@@ -94,26 +114,6 @@
             this.usernametxt.Size = new System.Drawing.Size(298, 35);
             this.usernametxt.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 38);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Login Account";
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(204, 226);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(106, 22);
-            this.lblname.TabIndex = 6;
-            this.lblname.Text = "Username:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -146,7 +146,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.ImeMode = System.Windows.Forms.ImeMode.Close;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
