@@ -35,23 +35,47 @@ namespace Login
 
         private void btn_signin_Click(object sender, EventArgs e)
         {
-            try
             {
-                CE_Login usuario = new CE_Login
+                try
                 {
-                    UsuarioNombre = txtUsuario.Text,
-                    Contraseña = txtContraseña.Text
-                };
+                    CE_Login usuario = new CE_Login
+                    {
+                        UsuarioNombre = txtUsuario.Text,
+                        Contraseña = txtContraseña.Text
+                    };
 
+                    string rol = loginNegocio.ValidarUsuario(usuario);
 
-                string rol = loginNegocio.ValidarUsuario(usuario);
+                    if (!string.IsNullOrEmpty(rol))
+                    {
+                        MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (rol == "Administrador")
+                        {
+                            Administrador adminForm = new Administrador();
+                            adminForm.Show();
+                        }
+                        else if (rol == "Cliente")
+                        {
+                            Clientes clienteForm = new Clientes();
+                            clienteForm.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
