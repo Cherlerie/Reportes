@@ -45,5 +45,11 @@
     <Compile Include="CD_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pjr_Capa_Entidad\Pjr_Capa_Entidad.csproj">
+      <Project>{b92228d5-a724-4026-8f23-e366c911509d}</Project>
+      <Name>Pjr_Capa_Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

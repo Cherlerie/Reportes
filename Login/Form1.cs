@@ -35,48 +35,51 @@ namespace Login
 
         private void btn_signin_Click(object sender, EventArgs e)
         {
+            try
             {
-                try
+                CE_Login usuario = new CE_Login
                 {
-                    CE_Login usuario = new CE_Login
+                    UsuarioNombre = txtUsuario.Text,
+                    Contraseña = txtContraseña.Text
+                };
+
+                // Obtenemos el rol y el ClienteID
+                var (rol, clienteID) = loginNegocio.ValidarUsuario(usuario);
+
+                if (!string.IsNullOrEmpty(rol))
+                {
+                    MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Si es Administrador
+                    if (rol == "Administrador")
                     {
-                        UsuarioNombre = txtUsuario.Text,
-                        Contraseña = txtContraseña.Text
-                    };
-
-                    string rol = loginNegocio.ValidarUsuario(usuario);
-
-                    if (!string.IsNullOrEmpty(rol))
+                        Administrador adminForm = new Administrador();
+                        adminForm.Show();
+                    }
+                    // Si es Cliente
+                    else if (rol == "Cliente")
                     {
-                        MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        if (rol == "Administrador")
-                        {
-                            Administrador adminForm = new Administrador();
-                            adminForm.Show();
-                        }
-                        else if (rol == "Cliente")
-                        {
-                            Clientes clienteForm = new Clientes();
-                            clienteForm.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-
-                        this.Hide();
+                        // Pasamos el ClienteID al formulario Cliente
+                        Clientes clienteForm = new Clientes(clienteID);
+                        clienteForm.Show();
                     }
                     else
                     {
-                        MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
+
+                    this.Hide();
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }
