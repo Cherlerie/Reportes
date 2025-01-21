@@ -12,9 +12,25 @@ namespace Login
 {
     public partial class Clientes : Form
     {
-        public Clientes()
+        private int clienteID;
+        public Clientes(int clienteID)
         {
             InitializeComponent();
+            this.clienteID = clienteID; 
+        }
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+            label1.Text = clienteID.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

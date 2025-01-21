@@ -10,13 +10,13 @@ namespace Pjr_Capa_Datos
 {
     public class CD_Login : BD_Conexion
     {
-        public string ValidarUsuario(string usuario, string contraseña)
+        public (string, int) ValidarUsuario(string usuario, string contraseña)
         {
             string rol = null;
+            int clienteID = 0;
 
             try
             {
-               
                 using (SqlConnection conexion = conectar())
                 {
                     using (SqlCommand cmd = new SqlCommand("sp_login", conexion))
@@ -30,7 +30,8 @@ namespace Pjr_Capa_Datos
                         {
                             if (reader.Read())
                             {
-                                rol = reader["Rol"].ToString(); 
+                                rol = reader["Rol"].ToString();
+                                clienteID = Convert.ToInt32(reader["ClienteID"]);
                             }
                         }
                     }
@@ -41,8 +42,9 @@ namespace Pjr_Capa_Datos
                 throw new Exception("Error al validar el usuario: " + ex.Message);
             }
 
-            return rol;
+            return (rol, clienteID);
         }
+
     }
 }
 

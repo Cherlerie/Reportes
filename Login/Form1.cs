@@ -43,16 +43,43 @@ namespace Login
                     Contraseña = txtContraseña.Text
                 };
 
+                // Obtenemos el rol y el ClienteID
+                var (rol, clienteID) = loginNegocio.ValidarUsuario(usuario);
 
-                string rol = loginNegocio.ValidarUsuario(usuario);
+                if (!string.IsNullOrEmpty(rol))
+                {
+                    MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show($"Bienvenido. Rol: {rol}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Si es Administrador
+                    if (rol == "Administrador")
+                    {
+                        Administrador adminForm = new Administrador();
+                        adminForm.Show();
+                    }
+                    // Si es Cliente
+                    else if (rol == "Cliente")
+                    {
+                        // Pasamos el ClienteID al formulario Cliente
+                        Clientes clienteForm = new Clientes(clienteID);
+                        clienteForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
 
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
     }
 }
