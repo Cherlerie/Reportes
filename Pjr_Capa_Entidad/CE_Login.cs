@@ -11,6 +11,7 @@ namespace Pjr_Capa_Entidad
         public string UsuarioNombre { get; set; }
         public string Contraseña { get; set; }
         public string Rol { get; set; }
+        public int ClienteID { get; set; }
 
 
     }
