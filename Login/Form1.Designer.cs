@@ -34,8 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblpassword = new System.Windows.Forms.Label();
             this.btn_signin = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.passwordtxt = new System.Windows.Forms.TextBox();
+            this.usernametxt = new System.Windows.Forms.TextBox();
+=======
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+>>>>>>> 61e6fd07301623a3fde2f757e682e3e353b7e1e0
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -62,10 +67,16 @@
             // 
             this.lblname.AutoSize = true;
             this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
+            this.lblname.Location = new System.Drawing.Point(204, 226);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(106, 22);
+=======
             this.lblname.Location = new System.Drawing.Point(136, 147);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(77, 15);
+>>>>>>> 61e6fd07301623a3fde2f757e682e3e353b7e1e0
             this.lblname.TabIndex = 6;
             this.lblname.Text = "Username:";
             // 
@@ -73,10 +84,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
+            this.label1.Location = new System.Drawing.Point(201, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 38);
+=======
             this.label1.Location = new System.Drawing.Point(134, 81);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 26);
+>>>>>>> 61e6fd07301623a3fde2f757e682e3e353b7e1e0
             this.label1.TabIndex = 5;
             this.label1.Text = "Login Account";
             // 
@@ -115,12 +132,20 @@
             // 
             // txtUsuario
             // 
+<<<<<<< HEAD
+            this.usernametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernametxt.Location = new System.Drawing.Point(208, 261);
+            this.usernametxt.Name = "usernametxt";
+            this.usernametxt.Size = new System.Drawing.Size(298, 35);
+            this.usernametxt.TabIndex = 0;
+=======
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(139, 170);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(200, 26);
             this.txtUsuario.TabIndex = 0;
+>>>>>>> 61e6fd07301623a3fde2f757e682e3e353b7e1e0
             // 
             // pictureBox1
             // 
@@ -156,8 +181,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+<<<<<<< HEAD
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.ImeMode = System.Windows.Forms.ImeMode.Close;
+=======
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 61e6fd07301623a3fde2f757e682e3e353b7e1e0
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
