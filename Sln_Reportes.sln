@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pjr_Capa_Datos", "Pjr_Capa_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pjr_Capa_Negocio", "Pjr_Capa_Negocio\Pjr_Capa_Negocio.csproj", "{E3F1E176-FDC5-4AEB-97F4-6C80C4964B16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{0A924830-6CB5-452F-8AC3-F5DD165B51E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{B9278000-109D-4DE8-B345-EB33AC45D217}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +29,15 @@ Global
 		{E3F1E176-FDC5-4AEB-97F4-6C80C4964B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3F1E176-FDC5-4AEB-97F4-6C80C4964B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3F1E176-FDC5-4AEB-97F4-6C80C4964B16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A924830-6CB5-452F-8AC3-F5DD165B51E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A924830-6CB5-452F-8AC3-F5DD165B51E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A924830-6CB5-452F-8AC3-F5DD165B51E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A924830-6CB5-452F-8AC3-F5DD165B51E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9278000-109D-4DE8-B345-EB33AC45D217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9278000-109D-4DE8-B345-EB33AC45D217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9278000-109D-4DE8-B345-EB33AC45D217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9278000-109D-4DE8-B345-EB33AC45D217}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22652B20-2E8D-4326-B96F-CADC165DC4CE}
 	EndGlobalSection
 EndGlobal
