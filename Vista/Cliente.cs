@@ -12,9 +12,16 @@ namespace Vista
 {
     public partial class Cliente : Form
     {
-        public Cliente()
+        private int ClienteID;
+        public Cliente(int clienteID)
         {
             InitializeComponent();
+            this.ClienteID = clienteID;
+
+        }
+        private void Cliente_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show($"ClienteID recibido: {ClienteID}");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Pjr_Capa_Negocio
     {
         private CD_Login loginDAL = new CD_Login();
 
-        public (string, int) ValidarUsuario(CE_Login usuario)
+        public (string Rol, int ClienteID) ValidarUsuario(CE_Login usuario)
         {
             if (string.IsNullOrWhiteSpace(usuario.UsuarioNombre) || string.IsNullOrWhiteSpace(usuario.Contraseña))
             {
