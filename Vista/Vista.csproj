@@ -60,6 +60,12 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
@@ -136,10 +145,14 @@
     <None Include="Resources\Captura de pantalla 2025-01-25 023545.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\Captura de pantalla 2025-01-28 081525.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-01-28 082930.png" />
+=======
+    <None Include="Resources\images1.png" />
+>>>>>>> 3bcadfe72493f65bee9046538336c9747461c9f4
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

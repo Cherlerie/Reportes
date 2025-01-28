@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Perfil : Form
+    public partial class BuscarCliente : Form
     {
-        public Perfil()
+        public BuscarCliente()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
