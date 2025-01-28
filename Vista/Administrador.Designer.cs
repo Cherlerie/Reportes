@@ -135,7 +135,7 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_28_082930;
+            //this.btnRestaurar.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_28_082930;
             this.btnRestaurar.Location = new System.Drawing.Point(1107, 0);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(38, 32);
@@ -149,7 +149,7 @@
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::Vista.Properties.Resources.Minimize_Icon;
+            //this.pictureBox4.Image = global::Vista.Properties.Resources.Minimize_Icon;
             this.pictureBox4.Location = new System.Drawing.Point(1081, 5);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -162,7 +162,7 @@
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_28_081525;
+            //this.pictureBox3.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_28_081525;
             this.pictureBox3.Location = new System.Drawing.Point(1109, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 29);
@@ -175,7 +175,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Vista.Properties.Resources.Close_Icon;
+            //this.pictureBox2.Image = global::Vista.Properties.Resources.Close_Icon;
             this.pictureBox2.Location = new System.Drawing.Point(1147, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -186,7 +186,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
+            //this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
             this.pictureBox1.Location = new System.Drawing.Point(13, 40);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -204,7 +204,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Vista.Properties.Resources.Close_Icon;
+            //this.button1.Image = global::Vista.Properties.Resources.Close_Icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(123, 206);
             this.button1.Name = "button1";
