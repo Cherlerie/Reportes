@@ -23,5 +23,10 @@ namespace Vista
         {
             MessageBox.Show($"ClienteID recibido: {ClienteID}");
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

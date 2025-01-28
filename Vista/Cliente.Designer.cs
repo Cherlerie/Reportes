@@ -44,9 +44,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(57, 28);
+            this.label1.Location = new System.Drawing.Point(76, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 33);
+            this.label1.Size = new System.Drawing.Size(187, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "WELCOME!";
             // 
@@ -54,18 +55,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 145);
+            this.label2.Location = new System.Drawing.Point(59, 178);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 19);
+            this.label2.Size = new System.Drawing.Size(54, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "User";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Vista.Properties.Resources.images;
-            this.pictureBox2.Location = new System.Drawing.Point(48, 285);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 351);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 29);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -74,8 +77,9 @@
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
             this.pictureBox1.Location = new System.Drawing.Point(1, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(315, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(420, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -85,33 +89,37 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(96, 72);
+            this.label3.Location = new System.Drawing.Point(128, 89);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 21);
+            this.label3.Size = new System.Drawing.Size(269, 27);
             this.label3.TabIndex = 7;
             this.label3.Text = "SU SEGURIDAD Y LA DE SU FAMILIA";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(314, -2);
+            this.panel1.Location = new System.Drawing.Point(419, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 346);
+            this.panel1.Size = new System.Drawing.Size(363, 426);
             this.panel1.TabIndex = 8;
             // 
             // Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(587, 344);
+            this.ClientSize = new System.Drawing.Size(783, 423);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cliente";
             this.Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
