@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login
+namespace Vista
 {
-    public partial class Administrador : Form
+    public partial class Moras : Form
     {
-        public Administrador()
+        public Moras()
         {
             InitializeComponent();
         }

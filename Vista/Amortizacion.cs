@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Form
+namespace Vista
 {
-    public partial class Administrador : Form
+    public partial class Amortizacion : Form
     {
-        public Administrador()
+        public Amortizacion()
         {
             InitializeComponent();
         }

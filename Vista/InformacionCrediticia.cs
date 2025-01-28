@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Form
+namespace Vista
 {
-    public partial class Clientes : Form
+    public partial class InformacionCrediticia : Form
     {
-        public Clientes()
+        public InformacionCrediticia()
         {
             InitializeComponent();
         }
