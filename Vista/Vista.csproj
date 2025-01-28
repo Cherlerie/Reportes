@@ -145,14 +145,11 @@
     <None Include="Resources\Captura de pantalla 2025-01-25 023545.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\Captura de pantalla 2025-01-28 081525.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-01-28 082930.png" />
-=======
     <None Include="Resources\images1.png" />
->>>>>>> 3bcadfe72493f65bee9046538336c9747461c9f4
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
