@@ -331,11 +331,9 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-<<<<<<< HEAD
+
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-=======
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
->>>>>>> e216d6b072c06f7115903899f9fc8fade827ba4d
         /// </summary>
         internal static System.Drawing.Bitmap Untitled2 {
             get {
