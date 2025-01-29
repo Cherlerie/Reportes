@@ -39,17 +39,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(367, 89);
+            this.textBox1.Location = new System.Drawing.Point(489, 110);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 20);
+            this.textBox1.Size = new System.Drawing.Size(513, 22);
             this.textBox1.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(259, 128);
+            this.dataGridView1.Location = new System.Drawing.Point(345, 158);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(493, 275);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(657, 338);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -57,25 +60,28 @@
             this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 449);
+            this.panel1.Size = new System.Drawing.Size(263, 553);
             this.panel1.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(40, 323);
+            this.button1.Location = new System.Drawing.Point(43, 442);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 80);
+            this.button1.Size = new System.Drawing.Size(186, 64);
             this.button1.TabIndex = 0;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(259, 80);
+            this.button2.Location = new System.Drawing.Point(345, 98);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 36);
+            this.button2.Size = new System.Drawing.Size(117, 44);
             this.button2.TabIndex = 4;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = true;
@@ -83,13 +89,15 @@
             // 
             // BuscarCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BuscarCliente";
             this.Text = "BuscarCliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
