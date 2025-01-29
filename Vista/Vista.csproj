@@ -188,5 +188,11 @@
     <None Include="Resources\Captura de pantalla 2025-01-28 082930.png" />
     <None Include="Resources\images1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\072maximize1_99942.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_118927.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

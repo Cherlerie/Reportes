@@ -70,5 +70,30 @@ namespace Vista
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+           SubmenuReportes.Visible = true;
+        }
+
+        private void btnrptventa_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void btnrptcompras_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void btnrptpagos_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
