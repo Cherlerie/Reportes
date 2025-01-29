@@ -63,6 +63,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _072maximize1_99942 {
+            get {
+                object obj = ResourceManager.GetObject("072maximize1_99942", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _11581129 {
             get {
                 object obj = ResourceManager.GetObject("11581129", resourceCulture);
@@ -101,7 +111,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_25_023545 {
             get {
@@ -131,7 +141,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_28_082930 {
             get {
@@ -141,7 +151,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_28_0829301 {
             get {
@@ -213,6 +223,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maximize_118927 {
+            get {
+                object obj = ResourceManager.GetObject("maximize_118927", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimize_Icon {
             get {
                 object obj = ResourceManager.GetObject("Minimize_Icon", resourceCulture);
@@ -273,6 +293,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap powercircleandlinesymbol_118369 {
+            get {
+                object obj = ResourceManager.GetObject("powercircleandlinesymbol_118369", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap screenmonitor1_120611 {
             get {
                 object obj = ResourceManager.GetObject("screenmonitor1_120611", resourceCulture);
@@ -301,7 +331,11 @@ namespace Vista.Properties {
         }
         
         /// <summary>
+<<<<<<< HEAD
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+=======
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+>>>>>>> e216d6b072c06f7115903899f9fc8fade827ba4d
         /// </summary>
         internal static System.Drawing.Bitmap Untitled2 {
             get {

@@ -60,6 +60,12 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Amortizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amortizacion.Designer.cs">
+      <DependentUpon>Amortizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,17 +78,41 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="InformacionCrediticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacionCrediticia.Designer.cs">
+      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Moras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moras.Designer.cs">
+      <DependentUpon>Moras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pago.Designer.cs">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos.Designer.cs">
+      <DependentUpon>Prestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,15 +178,18 @@
     <None Include="Resources\Captura de pantalla 2025-01-25 023545.png" />
   </ItemGroup>
   <ItemGroup>
-
     <None Include="Resources\cancel_close_delete_exit_logout_remove_x_icon_123217.ico" />
-
     <None Include="Resources\Captura de pantalla 2025-01-28 081525.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-01-28 082930.png" />
     <None Include="Resources\images1.png" />
-
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\072maximize1_99942.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_118927.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

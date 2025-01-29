@@ -378,7 +378,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Vista.Properties.Resources.cancel_close_delete_exit_logout_remove_x_icon_123217;
+//            this.pictureBox2.Image = global::Vista.Properties.Resources.cancel_close_delete_exit_logout_remove_x_icon_123217;
             this.pictureBox2.Location = new System.Drawing.Point(47, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 31);

@@ -161,7 +161,7 @@
             // 
             // btnMin
             // 
-            this.btnMin.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_25_023555;
+//            this.btnMin.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_25_023555;
             this.btnMin.Location = new System.Drawing.Point(977, 0);
             this.btnMin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMin.Name = "btnMin";
@@ -173,7 +173,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_25_023545;
+//            this.btnCerrar.Image = global::Vista.Properties.Resources.Captura_de_pantalla_2025_01_25_023545;
             this.btnCerrar.Location = new System.Drawing.Point(1016, 0);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
@@ -185,7 +185,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
+//            this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
             this.pictureBox1.Location = new System.Drawing.Point(21, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(374, 106);
