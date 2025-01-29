@@ -61,5 +61,30 @@ namespace Vista
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = true;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible= false;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = false;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = false;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
