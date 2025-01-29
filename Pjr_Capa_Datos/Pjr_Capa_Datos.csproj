@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="BD_Conexion.cs" />
     <Compile Include="CD_Login.cs" />
+    <Compile Include="CD_Perfil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
