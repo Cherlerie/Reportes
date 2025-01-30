@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace Vista
+namespace Vista 
 {
     public partial class Cliente : Form
     {
@@ -20,6 +20,7 @@ namespace Vista
             this.ClienteID = clienteID;
 
         }
+
         private void Cliente_Load(object sender, EventArgs e)
         {
             MessageBox.Show($"ClienteID recibido: {ClienteID}");
@@ -94,6 +95,17 @@ namespace Vista
         private void btnsalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Perfil PerfilForm = new Perfil(ClienteID);
+            PerfilForm.Show();
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

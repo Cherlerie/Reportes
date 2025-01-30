@@ -22,6 +22,11 @@ namespace Vista
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+        public static class Sesion
+        {
+            public static int ClienteID { get; set; }
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -109,11 +114,14 @@ namespace Vista
 
                         if (rol == "Administrador")
                         {
+                            Sesion.ClienteID = clienteID;
+
                             Administrador adminForm = new Administrador();
                             adminForm.Show();
                         }
                         else if (rol == "Cliente")
                         {
+                            Sesion.ClienteID = clienteID;
                             Cliente clienteForm = new Cliente(clienteID);
                             clienteForm.Show();
                         }

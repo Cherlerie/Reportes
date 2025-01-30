@@ -15,6 +15,8 @@ namespace Pjr_Capa_Entidad
         private string Telefono;
         private string Direccion;
         private string correo;
+        private string Usuario;
+
 
         public int ClienteID1 { get => ClienteID; set => ClienteID = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
@@ -23,5 +25,6 @@ namespace Pjr_Capa_Entidad
         public string Telefono1 { get => Telefono; set => Telefono = value; }
         public string Direccion1 { get => Direccion; set => Direccion = value; }
         public string Correo { get => correo; set => correo = value; }
+        public string Usuario1 { get => Usuario; set => Usuario = value; }
     }
 }

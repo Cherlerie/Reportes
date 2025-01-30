@@ -17,15 +17,9 @@ namespace Pjr_Capa_Datos
                     using (var command = new SqlCommand())
                     {
                         command.Connection = connection;
-                        command.CommandText = "UPDATE Usuarios SET " +
-                            "Usuario = @Usuario, " +
-                            "Contraseña = @Contraseña, " +
-                            "Nombre = @Nombre, " +
-                            "Apellido = @Apellido, " +
-                            "Correo = @Correo, " +
-                            "Direccion = @Direccion, " +
-                            "Telefono = @Telefono " +
-                            "WHERE ClienteID = @ClienteID";
+                        command.CommandText = "UPDATE Cliente SET " +
+    "Usuario=@Usuario, Contraseña=@Contraseña, Nombre=@Nombre, Apellido=@Apellido, Correo=@Correo, Direccion=@Direccion, Telefono=@Telefono " +
+    "WHERE ClienteID=@ClienteID";
 
                         command.Parameters.AddWithValue("@Usuario", usuarioPerfil);
                         command.Parameters.AddWithValue("@Contraseña", contraseñaPerfil);
@@ -57,7 +51,7 @@ namespace Pjr_Capa_Datos
                 using (var connection = conectar())
                 {
                     connection.Open();
-                    using (var command = new SqlCommand("SELECT ClienteID, Nombre, Apellido, Contraseña, Telefono, Direccion, Correo FROM Usuarios WHERE ClienteID = @ClienteID", connection))
+                    using (var command = new SqlCommand("SELECT ClienteID, Nombre, Apellido, Contraseña, Telefono, Direccion, Correo FROM CLiente WHERE ClienteID = @ClienteID", connection))
                     {
                         command.Parameters.AddWithValue("@ClienteID", id);
                         using (var reader = command.ExecuteReader())
