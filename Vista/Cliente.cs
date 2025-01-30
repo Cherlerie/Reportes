@@ -101,11 +101,39 @@ namespace Vista
         {
             Perfil PerfilForm = new Perfil(ClienteID);
             PerfilForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            PerfilForm.TopLevel = false;
+
+            PerfilForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(PerfilForm);
+
+           
+            PerfilForm.Show();
         }
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Moras MorasForm = new Moras();
+            MorasForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            MorasForm.TopLevel = false;
+
+            MorasForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(MorasForm);
+
+
+            MorasForm.Show();
         }
     }
 }
