@@ -135,5 +135,57 @@ namespace Vista
 
             MorasForm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Pago PagoForm = new Pago();
+            PagoForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            PagoForm.TopLevel = false;
+
+            PagoForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(PagoForm);
+
+
+            PagoForm.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Amortizacion AmortizacionForm = new Amortizacion();
+            AmortizacionForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            AmortizacionForm.TopLevel = false;
+
+            AmortizacionForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(AmortizacionForm);
+
+
+            AmortizacionForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InformacionCrediticia InformacionCrediticiaForm = new InformacionCrediticia();
+            InformacionCrediticiaForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            InformacionCrediticiaForm.TopLevel = false;
+
+            InformacionCrediticiaForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(InformacionCrediticiaForm);
+
+
+            InformacionCrediticiaForm.Show();
+        }
     }
 }
