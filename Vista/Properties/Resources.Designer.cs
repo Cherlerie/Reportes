@@ -71,7 +71,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _11581129 {
             get {
@@ -103,6 +103,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_circle_icon_149965 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_circle_icon_149965", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_close_delete_exit_logout_remove_x_icon_123217 {
             get {
                 object obj = ResourceManager.GetObject("cancel_close_delete_exit_logout_remove_x_icon_123217", resourceCulture);
@@ -111,7 +121,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_25_023545 {
             get {
@@ -141,7 +151,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_28_082930 {
             get {
@@ -151,7 +161,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_01_28_0829301 {
             get {
@@ -231,7 +241,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Minimize_Icon {
             get {
@@ -273,6 +283,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap powercircleandlinesymbol_118369 {
+            get {
+                object obj = ResourceManager.GetObject("powercircleandlinesymbol_118369", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap poweroff_icon_237442 {
             get {
                 object obj = ResourceManager.GetObject("poweroff_icon_237442", resourceCulture);
@@ -292,16 +312,6 @@ namespace Vista.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap powercircleandlinesymbol_118369 {
-            get {
-                object obj = ResourceManager.GetObject("powercircleandlinesymbol_118369", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap screenmonitor1_120611 {
             get {
@@ -331,9 +341,7 @@ namespace Vista.Properties {
         }
         
         /// <summary>
-
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Untitled2 {
             get {

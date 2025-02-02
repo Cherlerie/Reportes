@@ -197,5 +197,8 @@
   <ItemGroup>
     <None Include="Resources\maximize_118927.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_circle_icon_149965.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
