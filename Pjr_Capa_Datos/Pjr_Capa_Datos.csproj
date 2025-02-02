@@ -50,8 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_Conexion.cs" />
+    <Compile Include="CD_Amortizacion.cs" />
     <Compile Include="CD_Login.cs" />
+    <Compile Include="CD_Pagos.cs" />
     <Compile Include="CD_Perfil.cs" />
+    <Compile Include="CD_Prestamo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

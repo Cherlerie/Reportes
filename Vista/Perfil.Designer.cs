@@ -71,7 +71,7 @@
             // txtNombrePerfilCliente
             // 
             this.txtNombrePerfilCliente.Location = new System.Drawing.Point(57, 100);
-            this.txtNombrePerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombrePerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombrePerfilCliente.Name = "txtNombrePerfilCliente";
             this.txtNombrePerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtNombrePerfilCliente.TabIndex = 1;
@@ -79,7 +79,7 @@
             // txtContraseñaPerfilCliente
             // 
             this.txtContraseñaPerfilCliente.Location = new System.Drawing.Point(57, 404);
-            this.txtContraseñaPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseñaPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseñaPerfilCliente.Name = "txtContraseñaPerfilCliente";
             this.txtContraseñaPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtContraseñaPerfilCliente.TabIndex = 2;
@@ -87,7 +87,7 @@
             // txtusuarioPerfilCliente
             // 
             this.txtusuarioPerfilCliente.Location = new System.Drawing.Point(57, 356);
-            this.txtusuarioPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtusuarioPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuarioPerfilCliente.Name = "txtusuarioPerfilCliente";
             this.txtusuarioPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtusuarioPerfilCliente.TabIndex = 3;
@@ -95,7 +95,7 @@
             // txtDireccionPerfilCliente
             // 
             this.txtDireccionPerfilCliente.Location = new System.Drawing.Point(57, 300);
-            this.txtDireccionPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccionPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccionPerfilCliente.Name = "txtDireccionPerfilCliente";
             this.txtDireccionPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtDireccionPerfilCliente.TabIndex = 4;
@@ -103,7 +103,7 @@
             // txtTelefonoPerfilCliente
             // 
             this.txtTelefonoPerfilCliente.Location = new System.Drawing.Point(57, 249);
-            this.txtTelefonoPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefonoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefonoPerfilCliente.Name = "txtTelefonoPerfilCliente";
             this.txtTelefonoPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtTelefonoPerfilCliente.TabIndex = 5;
@@ -111,7 +111,7 @@
             // txtCorreoPerfilCliente
             // 
             this.txtCorreoPerfilCliente.Location = new System.Drawing.Point(57, 198);
-            this.txtCorreoPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreoPerfilCliente.Name = "txtCorreoPerfilCliente";
             this.txtCorreoPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtCorreoPerfilCliente.TabIndex = 6;
@@ -119,7 +119,7 @@
             // txtApellidoPerfilCliente
             // 
             this.txtApellidoPerfilCliente.Location = new System.Drawing.Point(57, 145);
-            this.txtApellidoPerfilCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellidoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidoPerfilCliente.Name = "txtApellidoPerfilCliente";
             this.txtApellidoPerfilCliente.Size = new System.Drawing.Size(288, 20);
             this.txtApellidoPerfilCliente.TabIndex = 7;
@@ -146,7 +146,7 @@
             this.panel1.Controls.Add(this.txtContraseñaPerfilCliente);
             this.panel1.Controls.Add(this.txtNombrePerfilCliente);
             this.panel1.Location = new System.Drawing.Point(397, -5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(417, 548);
             this.panel1.TabIndex = 8;
@@ -155,7 +155,7 @@
             // 
             this.btnGuardarPerfil.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarPerfil.Location = new System.Drawing.Point(214, 456);
-            this.btnGuardarPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardarPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarPerfil.Name = "btnGuardarPerfil";
             this.btnGuardarPerfil.Size = new System.Drawing.Size(130, 38);
             this.btnGuardarPerfil.TabIndex = 18;
@@ -167,12 +167,13 @@
             // 
             this.btnCancelarPerfil.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarPerfil.Location = new System.Drawing.Point(64, 456);
-            this.btnCancelarPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelarPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarPerfil.Name = "btnCancelarPerfil";
             this.btnCancelarPerfil.Size = new System.Drawing.Size(130, 38);
             this.btnCancelarPerfil.TabIndex = 17;
             this.btnCancelarPerfil.Text = "Cancelar";
             this.btnCancelarPerfil.UseVisualStyleBackColor = true;
+            this.btnCancelarPerfil.Click += new System.EventHandler(this.btnCancelarPerfil_Click);
             // 
             // lbllinkCambiar
             // 
@@ -414,7 +415,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Vista.Properties.Resources.cancel_close_delete_exit_logout_remove_x_icon_123217;
             this.pictureBox2.Location = new System.Drawing.Point(35, 14);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -426,7 +427,7 @@
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.images;
             this.pictureBox1.Location = new System.Drawing.Point(23, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(202, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -477,7 +478,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Perfil";
             this.Text = "Perfil";
             this.Load += new System.EventHandler(this.Perfil_Load);

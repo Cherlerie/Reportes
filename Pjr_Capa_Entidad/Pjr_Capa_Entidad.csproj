@@ -49,8 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CE_Amortizacion.cs" />
     <Compile Include="CE_Login.cs" />
+    <Compile Include="CE_Pago.cs" />
     <Compile Include="CE_perfil.cs" />
+    <Compile Include="CE_Prestamo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
