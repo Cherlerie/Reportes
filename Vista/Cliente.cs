@@ -106,7 +106,7 @@ namespace Vista
 
             PerfilForm.TopLevel = false;
 
-            PerfilForm.Dock = DockStyle.Fill;
+            PerfilForm.Dock = DockStyle.Fill; 
 
             PanelContenedor.Controls.Add(PerfilForm);
 

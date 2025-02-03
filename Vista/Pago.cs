@@ -3,7 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using Pjr_Capa_Entidad;
 using Pjr_Capa_Negocio;
-using static Vista.Login;  // Para acceder a Sesion.ClienteID
+using static Vista.Login;  
 
 namespace Vista
 {
@@ -12,9 +12,7 @@ namespace Vista
         private CN_Prestamo cnPrestamo = new CN_Prestamo();
         private CN_Pagos cnPagos = new CN_Pagos();
 
-        // Variable para almacenar el préstamo seleccionado
         private int prestamoID = 0;
-        // Almacenar el valor calculado de la cuota mensual
         private decimal cuotaMensual = 0;
 
         public Pago()
@@ -28,14 +26,12 @@ namespace Vista
             lblFechaActual.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
-        // Cargar los préstamos activos del cliente en el ComboBox
         private void CargarPrestamosCliente()
         {
             DataTable dt = cnPrestamo.ObtenerPrestamosPorCliente(Sesion.ClienteID);
             if (dt != null && dt.Rows.Count > 0)
             {
                 comboBoxIDprestamo.DataSource = dt;
-                // Asegúrate de que el DataTable incluya una columna "Descripcion" o usa "PrestamoID" para mostrar
                 comboBoxIDprestamo.DisplayMember = "Descripcion";
                 comboBoxIDprestamo.ValueMember = "PrestamoID";
             }
@@ -45,7 +41,6 @@ namespace Vista
             }
         }
 
-        // Al cambiar la selección en el ComboBox, actualiza los detalles del préstamo
         private void comboBoxIDprestamo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxIDprestamo.SelectedItem is DataRowView row)
@@ -56,14 +51,12 @@ namespace Vista
             }
         }
 
-        // Método para calcular la cuota mensual usando la fórmula del Sistema Francés
         private decimal CalcularCuotaMensual(CE_Prestamo prestamo)
         {
             decimal P = prestamo.MontoPrestamo;
             int n = prestamo.TiempoMeses;
             decimal i = 0;
 
-            // Determinar la tasa mensual según el plazo
             if (n >= 1 && n <= 3)
                 i = 0.10m / 12;
             else if (n >= 4 && n <= 6)
@@ -77,25 +70,19 @@ namespace Vista
             return cuota;
         }
 
-        // Cargar detalles del préstamo seleccionado y calcular la cuota mensual
         private void CargarDetallesPrestamo(int prestamoID)
         {
             DataRow prestamoRow = cnPrestamo.ObtenerDetallePrestamo(prestamoID);
             if (prestamoRow != null)
             {
-                // Asumimos que la consulta devuelve:
-                // "MontoPendiente", "InteresGenerado", "MontoTotal", y "FechaInicio"
                 lblMontoaPagar.Text = prestamoRow["MontoPendiente"].ToString();
                 lblInteresporPagar.Text = prestamoRow["InteresGenerado"].ToString();
                 lblFechaAnterior.Text = prestamoRow["FechaInicio"] != DBNull.Value
                                         ? Convert.ToDateTime(prestamoRow["FechaInicio"]).ToString("dd/MM/yyyy")
                                         : "N/A";
-                // La fecha siguiente se calcula como 30 días después de la fecha actual
                 lblFechaSiguiente.Text = DateTime.Now.AddDays(30).ToString("dd/MM/yyyy");
                 lblTotal.Text = prestamoRow["MontoTotal"].ToString();
 
-                // Para calcular la cuota mensual, primero necesitamos crear un objeto CE_Prestamo.
-                // Suponemos que la clase CE_Prestamo tiene las propiedades MontoPrestamo y TiempoMeses.
                 CE_Prestamo prestamo = new CE_Prestamo
                 {
                     PrestamoID = Convert.ToInt32(prestamoRow["PrestamoID"]),
@@ -104,7 +91,6 @@ namespace Vista
                 };
 
                 cuotaMensual = CalcularCuotaMensual(prestamo);
-                // Mostrar la cuota mensual en el label correspondiente.
                 lblMontoMes.Text = cuotaMensual.ToString("N2");
             }
             else
@@ -113,7 +99,6 @@ namespace Vista
             }
         }
 
-        // Registrar el pago
         private void btnRegistrarPago_Click(object sender, EventArgs e)
         {
             decimal montoPago;
@@ -123,30 +108,24 @@ namespace Vista
                 return;
             }
 
-            // Si el monto ingresado es igual o superior a la cuota mensual, consideramos que cubre la cuota.
-            // Si es exactamente igual a la cuota, se muestran 000 en los labels de "Monto a Pagar" y "Interés a Pagar".
+            
             bool pagaCompleto = montoPago >= cuotaMensual;
 
-            // Calcular mora si el pago se realiza después de la fecha límite
             decimal mora = 0;
             DateTime fechaSiguiente;
             if (DateTime.TryParse(lblFechaSiguiente.Text, out fechaSiguiente) && DateTime.Now > fechaSiguiente)
             {
-                // Se aplica una mora del 10% sobre el monto total a pagar.
                 decimal montoTotal = Convert.ToDecimal(lblTotal.Text);
                 mora = montoTotal * 0.10m;
             }
             decimal montoTotalPago = montoPago + mora;
 
-            // Registrar el pago usando la capa de negocio
             bool registrado = cnPagos.RegistrarPago(Sesion.ClienteID, prestamoID, montoTotalPago);
             if (registrado)
             {
                 MessageBox.Show("Pago registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Actualizar detalles y el historial de pagos
                 CargarDetallesPrestamo(prestamoID);
                 ActualizarHistorialPagos();
-                // Si el pago cubre la cuota, se muestran "000" en los labels de interés y monto a pagar.
                 if (pagaCompleto)
                 {
                     lblMontoaPagar.Text = "000";
@@ -159,16 +138,15 @@ namespace Vista
             }
         }
 
-        // Actualiza el DataGridView del historial de pagos
         private void ActualizarHistorialPagos()
         {
             DataTable dtHistorial = cnPagos.ObtenerHistorialPagos(prestamoID);
             dgvHistorialPagos.DataSource = dtHistorial;
         }
 
-        private void txtpago_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Puedes agregar validaciones en tiempo real aquí si es necesario.
+            this.Close();
         }
     }
 }

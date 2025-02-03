@@ -59,10 +59,10 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +70,7 @@
             // 
             // txtNombrePerfilCliente
             // 
-            this.txtNombrePerfilCliente.Location = new System.Drawing.Point(57, 100);
+            this.txtNombrePerfilCliente.Location = new System.Drawing.Point(57, 110);
             this.txtNombrePerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombrePerfilCliente.Name = "txtNombrePerfilCliente";
             this.txtNombrePerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -78,7 +78,7 @@
             // 
             // txtContraseñaPerfilCliente
             // 
-            this.txtContraseñaPerfilCliente.Location = new System.Drawing.Point(57, 404);
+            this.txtContraseñaPerfilCliente.Location = new System.Drawing.Point(57, 459);
             this.txtContraseñaPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseñaPerfilCliente.Name = "txtContraseñaPerfilCliente";
             this.txtContraseñaPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -86,7 +86,7 @@
             // 
             // txtusuarioPerfilCliente
             // 
-            this.txtusuarioPerfilCliente.Location = new System.Drawing.Point(57, 356);
+            this.txtusuarioPerfilCliente.Location = new System.Drawing.Point(57, 405);
             this.txtusuarioPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuarioPerfilCliente.Name = "txtusuarioPerfilCliente";
             this.txtusuarioPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -94,7 +94,7 @@
             // 
             // txtDireccionPerfilCliente
             // 
-            this.txtDireccionPerfilCliente.Location = new System.Drawing.Point(57, 300);
+            this.txtDireccionPerfilCliente.Location = new System.Drawing.Point(57, 351);
             this.txtDireccionPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccionPerfilCliente.Name = "txtDireccionPerfilCliente";
             this.txtDireccionPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -102,7 +102,7 @@
             // 
             // txtTelefonoPerfilCliente
             // 
-            this.txtTelefonoPerfilCliente.Location = new System.Drawing.Point(57, 249);
+            this.txtTelefonoPerfilCliente.Location = new System.Drawing.Point(57, 283);
             this.txtTelefonoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefonoPerfilCliente.Name = "txtTelefonoPerfilCliente";
             this.txtTelefonoPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -110,7 +110,7 @@
             // 
             // txtCorreoPerfilCliente
             // 
-            this.txtCorreoPerfilCliente.Location = new System.Drawing.Point(57, 198);
+            this.txtCorreoPerfilCliente.Location = new System.Drawing.Point(57, 221);
             this.txtCorreoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreoPerfilCliente.Name = "txtCorreoPerfilCliente";
             this.txtCorreoPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -118,7 +118,7 @@
             // 
             // txtApellidoPerfilCliente
             // 
-            this.txtApellidoPerfilCliente.Location = new System.Drawing.Point(57, 145);
+            this.txtApellidoPerfilCliente.Location = new System.Drawing.Point(57, 164);
             this.txtApellidoPerfilCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidoPerfilCliente.Name = "txtApellidoPerfilCliente";
             this.txtApellidoPerfilCliente.Size = new System.Drawing.Size(288, 20);
@@ -148,13 +148,13 @@
             this.panel1.Location = new System.Drawing.Point(397, -5);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(417, 548);
+            this.panel1.Size = new System.Drawing.Size(417, 618);
             this.panel1.TabIndex = 8;
             // 
             // btnGuardarPerfil
             // 
             this.btnGuardarPerfil.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarPerfil.Location = new System.Drawing.Point(214, 456);
+            this.btnGuardarPerfil.Location = new System.Drawing.Point(215, 522);
             this.btnGuardarPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarPerfil.Name = "btnGuardarPerfil";
             this.btnGuardarPerfil.Size = new System.Drawing.Size(130, 38);
@@ -166,7 +166,7 @@
             // btnCancelarPerfil
             // 
             this.btnCancelarPerfil.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarPerfil.Location = new System.Drawing.Point(64, 456);
+            this.btnCancelarPerfil.Location = new System.Drawing.Point(57, 522);
             this.btnCancelarPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarPerfil.Name = "btnCancelarPerfil";
             this.btnCancelarPerfil.Size = new System.Drawing.Size(130, 38);
@@ -178,10 +178,10 @@
             // lbllinkCambiar
             // 
             this.lbllinkCambiar.AutoSize = true;
-            this.lbllinkCambiar.Location = new System.Drawing.Point(133, 381);
+            this.lbllinkCambiar.Location = new System.Drawing.Point(162, 434);
             this.lbllinkCambiar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbllinkCambiar.Name = "lbllinkCambiar";
-            this.lbllinkCambiar.Size = new System.Drawing.Size(45, 13);
+            this.lbllinkCambiar.Size = new System.Drawing.Size(54, 15);
             this.lbllinkCambiar.TabIndex = 16;
             this.lbllinkCambiar.TabStop = true;
             this.lbllinkCambiar.Text = "Cambiar";
@@ -194,7 +194,7 @@
             this.label8.Location = new System.Drawing.Point(56, 73);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 25);
+            this.label8.Size = new System.Drawing.Size(79, 30);
             this.label8.TabIndex = 15;
             this.label8.Text = "Nombre";
             // 
@@ -203,10 +203,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(56, 118);
+            this.label7.Location = new System.Drawing.Point(55, 132);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 25);
+            this.label7.Size = new System.Drawing.Size(81, 30);
             this.label7.TabIndex = 14;
             this.label7.Text = "Apellido";
             // 
@@ -215,10 +215,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(56, 171);
+            this.label2.Location = new System.Drawing.Point(56, 186);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 25);
+            this.label2.Size = new System.Drawing.Size(160, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = "Correo electronico";
             // 
@@ -227,10 +227,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(56, 273);
+            this.label3.Location = new System.Drawing.Point(56, 308);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
+            this.label3.Size = new System.Drawing.Size(88, 30);
             this.label3.TabIndex = 10;
             this.label3.Text = "Direccion";
             // 
@@ -239,10 +239,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(56, 329);
+            this.label4.Location = new System.Drawing.Point(55, 373);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 25);
+            this.label4.Size = new System.Drawing.Size(73, 30);
             this.label4.TabIndex = 11;
             this.label4.Text = "Usuario";
             // 
@@ -251,10 +251,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(56, 223);
+            this.label5.Location = new System.Drawing.Point(55, 243);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 25);
+            this.label5.Size = new System.Drawing.Size(83, 30);
             this.label5.TabIndex = 12;
             this.label5.Text = "Telefono";
             // 
@@ -263,10 +263,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(56, 377);
+            this.label6.Location = new System.Drawing.Point(56, 427);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 25);
+            this.label6.Size = new System.Drawing.Size(102, 30);
             this.label6.TabIndex = 13;
             this.label6.Text = "Contraseña";
             // 
@@ -278,7 +278,7 @@
             this.label1.Location = new System.Drawing.Point(54, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 26);
+            this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 8;
             this.label1.Text = "Editar perfil";
             // 
@@ -289,7 +289,7 @@
             this.label9.Location = new System.Drawing.Point(229, 30);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 25);
+            this.label9.Size = new System.Drawing.Size(71, 30);
             this.label9.TabIndex = 9;
             this.label9.Text = "Usuario";
             // 
@@ -300,7 +300,7 @@
             this.label10.Location = new System.Drawing.Point(229, 218);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 25);
+            this.label10.Size = new System.Drawing.Size(37, 30);
             this.label10.TabIndex = 10;
             this.label10.Text = "Rol";
             // 
@@ -311,7 +311,7 @@
             this.label11.Location = new System.Drawing.Point(229, 167);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 25);
+            this.label11.Size = new System.Drawing.Size(54, 30);
             this.label11.TabIndex = 11;
             this.label11.Text = "Email";
             // 
@@ -322,7 +322,7 @@
             this.label12.Location = new System.Drawing.Point(229, 113);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 25);
+            this.label12.Size = new System.Drawing.Size(75, 30);
             this.label12.TabIndex = 12;
             this.label12.Text = "Apellido";
             // 
@@ -333,7 +333,7 @@
             this.label13.Location = new System.Drawing.Point(229, 68);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 25);
+            this.label13.Size = new System.Drawing.Size(76, 30);
             this.label13.TabIndex = 13;
             this.label13.Text = "Nombre";
             // 
@@ -343,7 +343,7 @@
             this.lblRol.Location = new System.Drawing.Point(232, 249);
             this.lblRol.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(39, 13);
+            this.lblRol.Size = new System.Drawing.Size(45, 15);
             this.lblRol.TabIndex = 14;
             this.lblRol.Text = "Cliente";
             // 
@@ -353,7 +353,7 @@
             this.lblNombre.Location = new System.Drawing.Point(236, 95);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(42, 13);
+            this.lblNombre.Size = new System.Drawing.Size(50, 15);
             this.lblNombre.TabIndex = 15;
             this.lblNombre.Text = "nombre";
             // 
@@ -363,7 +363,7 @@
             this.lblEmail.Location = new System.Drawing.Point(232, 196);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(31, 13);
+            this.lblEmail.Size = new System.Drawing.Size(38, 15);
             this.lblEmail.TabIndex = 15;
             this.lblEmail.Text = "email";
             // 
@@ -373,7 +373,7 @@
             this.lblApellido.Location = new System.Drawing.Point(232, 142);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(43, 13);
+            this.lblApellido.Size = new System.Drawing.Size(51, 15);
             this.lblApellido.TabIndex = 16;
             this.lblApellido.Text = "apellido";
             // 
@@ -383,17 +383,17 @@
             this.lblUsuario.Location = new System.Drawing.Point(236, 54);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(41, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(48, 15);
             this.lblUsuario.TabIndex = 17;
             this.lblUsuario.Text = "usuario";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(109, 245);
+            this.linkLabel1.Location = new System.Drawing.Point(92, 249);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(59, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(69, 15);
             this.linkLabel1.TabIndex = 18;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Editar perfil";
@@ -406,9 +406,30 @@
             this.label14.Location = new System.Drawing.Point(63, 14);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 39);
+            this.label14.Size = new System.Drawing.Size(135, 50);
             this.label14.TabIndex = 19;
             this.label14.Text = "Mi Perfil";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(227, 278);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 30);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Telefono";
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(239, 303);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(45, 15);
+            this.lblTelefono.TabIndex = 22;
+            this.lblTelefono.Text = "Cliente";
             // 
             // pictureBox2
             // 
@@ -425,41 +446,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Vista.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 54);
+            this.pictureBox1.Image = global::Vista.Properties.Resources.user_icon_icons_com_57997;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 66);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 169);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(148, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(227, 278);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 25);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Telefono";
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(239, 303);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(39, 13);
-            this.lblTelefono.TabIndex = 22;
-            this.lblTelefono.Text = "Cliente";
             // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 535);
+            this.ClientSize = new System.Drawing.Size(797, 602);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pictureBox2);
