@@ -179,5 +179,10 @@ namespace Vista
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = true;
+        }
     }
 }
