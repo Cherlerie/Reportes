@@ -48,21 +48,16 @@ namespace Vista
             }
         }
 
-        private void comboBoxPrestamos_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void comboBoxPrestamos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxPrestamos.SelectedItem is DataRowView row)
+            try
             {
-                prestamoID = Convert.ToInt32(row["PrestamoID"]);
+                prestamoID = Convert.ToInt32(comboBoxPrestamos.SelectedValue);
                 CargarAmortizacion();
             }
-            else
+            catch (Exception ex)
             {
-                try
-                {
-                    prestamoID = Convert.ToInt32(comboBoxPrestamos.SelectedValue);
-                    CargarAmortizacion();
-                }
-                catch { }
+                MessageBox.Show("Error al seleccionar el préstamo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -79,7 +74,7 @@ namespace Vista
             }
         }
 
-        private void btnRefrescar_Click_1(object sender, EventArgs e)
+        private void btnRefrescar_Click(object sender, EventArgs e)
         {
             CargarAmortizacion();
         }

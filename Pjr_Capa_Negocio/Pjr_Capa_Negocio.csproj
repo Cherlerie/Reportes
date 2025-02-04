@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CN_Amortizacion.cs" />
+    <Compile Include="CN_InformacionCrediticia.cs" />
     <Compile Include="CN_Login.cs" />
     <Compile Include="CN_Pago.cs" />
     <Compile Include="CN_Perfil.cs" />

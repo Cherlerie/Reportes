@@ -160,6 +160,9 @@
   <data name="screenmonitor1_120611" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\screenmonitor1_120611.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_icon-icons.com_57997" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_57997.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logos-grupo-web-remesas-vimenca-crop85248" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logos-grupo-web-remesas-vimenca-crop85248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,7 +211,7 @@
   <data name="png-transparent-power-on-off-button-grey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-power-on-off-button-grey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_icon-icons.com_57997" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_icon-icons.com_57997.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel_circle_icon_1499652" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_circle_icon_1499652.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

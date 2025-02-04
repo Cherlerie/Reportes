@@ -1,10 +1,12 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 
 namespace Pjr_Capa_Datos
 {
     public class BD_Conexion
     {
-        private string connectionString = "Data Source=LAPMASIEL;Initial Catalog=Prestamosdatabase;Integrated Security=true";
+        
+        private string connectionString = "Data Source=localhost;Initial Catalog=Prestamosdatabase;Integrated Security=true";
 
         protected SqlConnection conectar()
         {

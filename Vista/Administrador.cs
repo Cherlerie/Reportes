@@ -139,19 +139,19 @@ namespace Vista
         private void btnClientesMorosos_Click(object sender, EventArgs e)
         {
 
-            Moras MorasForm = new Moras();
-            MorasForm.Show();
+            BuscarMorosos BuscarMorososForm = new BuscarMorosos();
+            BuscarMorososForm.Show();
 
             PanelContenedor.Controls.Clear();
 
-            MorasForm.TopLevel = false;
+            BuscarMorososForm.TopLevel = false;
 
-            MorasForm.Dock = DockStyle.Fill;
+            BuscarMorososForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(MorasForm);
+            PanelContenedor.Controls.Add(BuscarMorososForm);
 
 
-            MorasForm.Show();
+            BuscarMorososForm.Show();
         }
 
         private void btnAmortizaciones_Click(object sender, EventArgs e)

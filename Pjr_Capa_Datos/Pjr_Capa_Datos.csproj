@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="BD_Conexion.cs" />
     <Compile Include="CD_Amortizacion.cs" />
+    <Compile Include="CD_InformacionCrediticia.cs" />
     <Compile Include="CD_Login.cs" />
     <Compile Include="CD_Pagos.cs" />
     <Compile Include="CD_Perfil.cs" />

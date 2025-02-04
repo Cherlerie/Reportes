@@ -123,6 +123,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_circle_icon_1499652 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_circle_icon_1499652", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_close_delete_exit_logout_remove_x_icon_123217 {
             get {
                 object obj = ResourceManager.GetObject("cancel_close_delete_exit_logout_remove_x_icon_123217", resourceCulture);
