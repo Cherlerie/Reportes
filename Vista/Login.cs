@@ -116,7 +116,7 @@ namespace Vista
                         {
                             Sesion.ClienteID = clienteID;
 
-                            Administrador adminForm = new Administrador();
+                            Administrador adminForm = new Administrador(clienteID);
                             adminForm.Show();
                         }
                         else if (rol == "Cliente")

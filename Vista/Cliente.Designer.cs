@@ -83,8 +83,9 @@
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1040, 38);
+            this.BarraTitulo.Size = new System.Drawing.Size(1387, 39);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             // 
@@ -93,9 +94,10 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1176, 7);
+            this.btnRestaurar.Location = new System.Drawing.Point(1568, 9);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
@@ -107,9 +109,10 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = global::Vista.Properties.Resources._072maximize1_99942;
-            this.btnMaximizar.Location = new System.Drawing.Point(1176, 7);
+            this.btnMaximizar.Location = new System.Drawing.Point(1568, 9);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 2;
             this.btnMaximizar.TabStop = false;
@@ -120,9 +123,10 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Vista.Properties.Resources.maximize_118927;
-            this.btnMinimizar.Location = new System.Drawing.Point(1145, 7);
+            this.btnMinimizar.Location = new System.Drawing.Point(1527, 9);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.TabStop = false;
@@ -133,9 +137,10 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = global::Vista.Properties.Resources.cancel_close_delete_exit_logout_remove_x_icon_123217;
-            this.btnCerrar.Location = new System.Drawing.Point(1211, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(1615, 9);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.Size = new System.Drawing.Size(33, 31);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
@@ -160,17 +165,19 @@
             this.MeniVertical.Controls.Add(this.button1);
             this.MeniVertical.Controls.Add(this.pictureBox1);
             this.MeniVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MeniVertical.Location = new System.Drawing.Point(0, 38);
+            this.MeniVertical.Location = new System.Drawing.Point(0, 39);
+            this.MeniVertical.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MeniVertical.Name = "MeniVertical";
-            this.MeniVertical.Size = new System.Drawing.Size(243, 602);
+            this.MeniVertical.Size = new System.Drawing.Size(324, 749);
             this.MeniVertical.TabIndex = 0;
             // 
             // btnsalir
             // 
             this.btnsalir.Image = global::Vista.Properties.Resources.powercircleandlinesymbol_118369;
-            this.btnsalir.Location = new System.Drawing.Point(3, 544);
+            this.btnsalir.Location = new System.Drawing.Point(4, 670);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(62, 55);
+            this.btnsalir.Size = new System.Drawing.Size(83, 68);
             this.btnsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnsalir.TabIndex = 1;
             this.btnsalir.TabStop = false;
@@ -179,9 +186,10 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(3, 311);
+            this.panel7.Location = new System.Drawing.Point(4, 383);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 32);
+            this.panel7.Size = new System.Drawing.Size(7, 39);
             this.panel7.TabIndex = 11;
             // 
             // SubmenuReportes
@@ -192,9 +200,10 @@
             this.SubmenuReportes.Controls.Add(this.btnrptcompras);
             this.SubmenuReportes.Controls.Add(this.panel12);
             this.SubmenuReportes.Controls.Add(this.btnrptpagos);
-            this.SubmenuReportes.Location = new System.Drawing.Point(49, 358);
+            this.SubmenuReportes.Location = new System.Drawing.Point(65, 441);
+            this.SubmenuReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SubmenuReportes.Name = "SubmenuReportes";
-            this.SubmenuReportes.Size = new System.Drawing.Size(195, 100);
+            this.SubmenuReportes.Size = new System.Drawing.Size(260, 123);
             this.SubmenuReportes.TabIndex = 0;
             this.SubmenuReportes.Visible = false;
             // 
@@ -202,17 +211,19 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Location = new System.Drawing.Point(4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(5, 28);
+            this.panel8.Size = new System.Drawing.Size(7, 34);
             this.panel8.TabIndex = 1;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel9.Location = new System.Drawing.Point(-91, 0);
+            this.panel9.Location = new System.Drawing.Point(-121, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 28);
+            this.panel9.Size = new System.Drawing.Size(7, 34);
             this.panel9.TabIndex = 17;
             // 
             // btnrptventa
@@ -224,9 +235,10 @@
             this.btnrptventa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptventa.ForeColor = System.Drawing.Color.White;
             this.btnrptventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptventa.Location = new System.Drawing.Point(14, 3);
+            this.btnrptventa.Location = new System.Drawing.Point(19, 4);
+            this.btnrptventa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnrptventa.Name = "btnrptventa";
-            this.btnrptventa.Size = new System.Drawing.Size(176, 28);
+            this.btnrptventa.Size = new System.Drawing.Size(235, 34);
             this.btnrptventa.TabIndex = 16;
             this.btnrptventa.Text = "Reporte Ventas";
             this.btnrptventa.UseVisualStyleBackColor = false;
@@ -236,17 +248,19 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(3, 37);
+            this.panel10.Location = new System.Drawing.Point(4, 46);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 28);
+            this.panel10.Size = new System.Drawing.Size(7, 34);
             this.panel10.TabIndex = 18;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel11.Location = new System.Drawing.Point(-91, 0);
+            this.panel11.Location = new System.Drawing.Point(-121, 0);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(5, 28);
+            this.panel11.Size = new System.Drawing.Size(7, 34);
             this.panel11.TabIndex = 17;
             // 
             // btnrptcompras
@@ -258,9 +272,10 @@
             this.btnrptcompras.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptcompras.ForeColor = System.Drawing.Color.White;
             this.btnrptcompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptcompras.Location = new System.Drawing.Point(14, 37);
+            this.btnrptcompras.Location = new System.Drawing.Point(19, 46);
+            this.btnrptcompras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnrptcompras.Name = "btnrptcompras";
-            this.btnrptcompras.Size = new System.Drawing.Size(176, 28);
+            this.btnrptcompras.Size = new System.Drawing.Size(235, 34);
             this.btnrptcompras.TabIndex = 18;
             this.btnrptcompras.Text = "Reporte Compras";
             this.btnrptcompras.UseVisualStyleBackColor = false;
@@ -270,17 +285,19 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(3, 71);
+            this.panel12.Location = new System.Drawing.Point(4, 88);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(5, 28);
+            this.panel12.Size = new System.Drawing.Size(7, 34);
             this.panel12.TabIndex = 18;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel13.Location = new System.Drawing.Point(-91, 0);
+            this.panel13.Location = new System.Drawing.Point(-121, 0);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(5, 28);
+            this.panel13.Size = new System.Drawing.Size(7, 34);
             this.panel13.TabIndex = 17;
             // 
             // btnrptpagos
@@ -292,9 +309,10 @@
             this.btnrptpagos.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptpagos.ForeColor = System.Drawing.Color.White;
             this.btnrptpagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptpagos.Location = new System.Drawing.Point(14, 71);
+            this.btnrptpagos.Location = new System.Drawing.Point(19, 88);
+            this.btnrptpagos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnrptpagos.Name = "btnrptpagos";
-            this.btnrptpagos.Size = new System.Drawing.Size(176, 28);
+            this.btnrptpagos.Size = new System.Drawing.Size(235, 34);
             this.btnrptpagos.TabIndex = 19;
             this.btnrptpagos.Text = "Reporte Pagos";
             this.btnrptpagos.UseVisualStyleBackColor = false;
@@ -310,9 +328,10 @@
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(6, 311);
+            this.btnReportes.Location = new System.Drawing.Point(8, 383);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(246, 32);
+            this.btnReportes.Size = new System.Drawing.Size(328, 39);
             this.btnReportes.TabIndex = 15;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
@@ -321,9 +340,10 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(0, 273);
+            this.panel5.Location = new System.Drawing.Point(0, 336);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 32);
+            this.panel5.Size = new System.Drawing.Size(7, 39);
             this.panel5.TabIndex = 8;
             // 
             // button5
@@ -336,9 +356,10 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 273);
+            this.button5.Location = new System.Drawing.Point(4, 336);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(239, 32);
+            this.button5.Size = new System.Drawing.Size(319, 39);
             this.button5.TabIndex = 9;
             this.button5.Text = "Informacion";
             this.button5.UseVisualStyleBackColor = false;
@@ -347,9 +368,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(0, 235);
+            this.panel4.Location = new System.Drawing.Point(0, 289);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 32);
+            this.panel4.Size = new System.Drawing.Size(7, 39);
             this.panel4.TabIndex = 6;
             // 
             // button4
@@ -362,9 +384,10 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 235);
+            this.button4.Location = new System.Drawing.Point(4, 289);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 32);
+            this.button4.Size = new System.Drawing.Size(320, 39);
             this.button4.TabIndex = 7;
             this.button4.Text = "Amortizacion";
             this.button4.UseVisualStyleBackColor = false;
@@ -373,9 +396,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(0, 197);
+            this.panel3.Location = new System.Drawing.Point(0, 242);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 32);
+            this.panel3.Size = new System.Drawing.Size(7, 39);
             this.panel3.TabIndex = 4;
             // 
             // button3
@@ -388,9 +412,10 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 197);
+            this.button3.Location = new System.Drawing.Point(4, 242);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 32);
+            this.button3.Size = new System.Drawing.Size(316, 39);
             this.button3.TabIndex = 5;
             this.button3.Text = "Pagos";
             this.button3.UseVisualStyleBackColor = false;
@@ -399,9 +424,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 159);
+            this.panel2.Location = new System.Drawing.Point(0, 196);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
+            this.panel2.Size = new System.Drawing.Size(7, 39);
             this.panel2.TabIndex = 2;
             // 
             // button2
@@ -414,9 +440,10 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 159);
+            this.button2.Location = new System.Drawing.Point(4, 196);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 32);
+            this.button2.Size = new System.Drawing.Size(320, 39);
             this.button2.TabIndex = 3;
             this.button2.Text = "Moras";
             this.button2.UseVisualStyleBackColor = false;
@@ -425,9 +452,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(0, 121);
+            this.panel1.Location = new System.Drawing.Point(0, 149);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 32);
+            this.panel1.Size = new System.Drawing.Size(7, 39);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -440,9 +468,10 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Vista.Properties.Resources.screenmonitor1_120611_1_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 121);
+            this.button1.Location = new System.Drawing.Point(4, 149);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 32);
+            this.button1.Size = new System.Drawing.Size(320, 39);
             this.button1.TabIndex = 1;
             this.button1.Text = "Perfil";
             this.button1.UseVisualStyleBackColor = false;
@@ -452,8 +481,9 @@
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.logos_grupo_web_remesas_vimenca_crop85248;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(324, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -462,23 +492,25 @@
             // 
             this.Administrador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.Administrador.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Administrador.Location = new System.Drawing.Point(243, 38);
+            this.Administrador.Location = new System.Drawing.Point(324, 39);
+            this.Administrador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Administrador.Name = "Administrador";
-            this.Administrador.Size = new System.Drawing.Size(797, 602);
+            this.Administrador.Size = new System.Drawing.Size(1063, 749);
             this.Administrador.TabIndex = 0;
             this.Administrador.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             this.Administrador.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelContenedor_MouseDown);
             // 
             // Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1387, 788);
             this.Controls.Add(this.Administrador);
             this.Controls.Add(this.MeniVertical);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cliente";
             this.Text = "Cliente";
             this.BarraTitulo.ResumeLayout(false);

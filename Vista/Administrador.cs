@@ -18,7 +18,7 @@ namespace Vista
         {
             InitializeComponent();
             this.ClienteID = clienteID;
-        }
+        } 
 
         private void Administrador_Load(object sender, EventArgs e)
         {
@@ -120,6 +120,19 @@ namespace Vista
 
         private void button12_Click(object sender, EventArgs e)
         {
+            BuscarCliente BuscarClienteForm = new BuscarCliente();
+            BuscarClienteForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            BuscarClienteForm.TopLevel = false;
+
+            BuscarClienteForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(BuscarClienteForm);
+
+
+            BuscarClienteForm.Show();
 
         }
 
@@ -176,6 +189,24 @@ namespace Vista
         }
 
         private void btnDetallesCliente_Click(object sender, EventArgs e)
+        {
+            InformacionCrediticiaAdmin InformacionCrediticiaAdminForm = new InformacionCrediticiaAdmin();
+            InformacionCrediticiaAdminForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            InformacionCrediticiaAdminForm.TopLevel = false;
+
+            InformacionCrediticiaAdminForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(InformacionCrediticiaAdminForm);
+
+
+            InformacionCrediticiaAdminForm.Show();
+
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
         {
 
         }

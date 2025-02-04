@@ -30,11 +30,10 @@ namespace Vista
             try
             {
                 DataTable dtPrestamos = cnPrestamo.ObtenerPrestamosPorCliente(ClienteID);
-                MessageBox.Show("Filas de préstamos: " + dtPrestamos.Rows.Count.ToString()); // Depuración
+                MessageBox.Show("Filas de préstamos: " + dtPrestamos.Rows.Count.ToString()); 
                 if (dtPrestamos != null && dtPrestamos.Rows.Count > 0)
                 {
                     comboBoxPrestamos.DataSource = dtPrestamos;
-                    // Usamos la columna "Descripcion" que se agregó en la consulta
                     comboBoxPrestamos.DisplayMember = "Descripcion";
                     comboBoxPrestamos.ValueMember = "PrestamoID";
                 }

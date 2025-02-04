@@ -21,6 +21,7 @@ namespace Vista
 
         }
 
+
         private void Cliente_Load(object sender, EventArgs e)
         {
             MessageBox.Show($"ClienteID recibido: {ClienteID}");

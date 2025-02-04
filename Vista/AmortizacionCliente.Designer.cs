@@ -57,7 +57,7 @@
             // comboBoxPrestamos
             // 
             this.comboBoxPrestamos.FormattingEnabled = true;
-            this.comboBoxPrestamos.Location = new System.Drawing.Point(159, 43);
+            this.comboBoxPrestamos.Location = new System.Drawing.Point(449, 46);
             this.comboBoxPrestamos.Name = "comboBoxPrestamos";
             this.comboBoxPrestamos.Size = new System.Drawing.Size(110, 21);
             this.comboBoxPrestamos.TabIndex = 2;
