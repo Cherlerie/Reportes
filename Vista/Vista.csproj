@@ -66,11 +66,23 @@
     <Compile Include="Amortizacion.Designer.cs">
       <DependentUpon>Amortizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="AmortizacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmortizacionCliente.Designer.cs">
+      <DependentUpon>AmortizacionCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuscarCliente.Designer.cs">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMorosos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMorosos.Designer.cs">
+      <DependentUpon>BuscarMorosos.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
@@ -119,17 +131,38 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Amortizacion.resx">
+      <DependentUpon>Amortizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmortizacionCliente.resx">
+      <DependentUpon>AmortizacionCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMorosos.resx">
+      <DependentUpon>BuscarMorosos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InformacionCrediticia.resx">
+      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Moras.resx">
+      <DependentUpon>Moras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pago.resx">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos.resx">
+      <DependentUpon>Prestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +223,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\maximize_118927.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_circle_icon_149965.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_circle_icon_1499651.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_57997.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,37 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Pjr_Capa_Entidad;
 
 namespace Pjr_Capa_Datos
 {
     public class CD_Login : BD_Conexion
     {
-        public (string, int) ValidarUsuario(string usuario, string contraseña)
+        /// <summary>
+        /// Valida el login y devuelve una tupla (Rol, ClienteID).
+        /// </summary>
+        public (string Rol, int ClienteID) ValidarUsuario(string usuario, string contraseña)
         {
-            string rol = null;
             int clienteID = 0;
-
+            string rol = null;
             try
             {
-                using (SqlConnection conexion = conectar())
+                using (SqlConnection connection = conectar())
                 {
-                    using (SqlCommand cmd = new SqlCommand("sp_login", conexion))
+                    using (SqlCommand cmd = new SqlCommand("sp_login", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@Usuario", usuario);
                         cmd.Parameters.AddWithValue("@Contraseña", contraseña);
-
-                        conexion.Open();
+                        connection.Open();
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                rol = reader["Rol"].ToString();
-                                clienteID = Convert.ToInt32(reader["ClienteID"]);
+                                // Se asume que el SP retorna columnas "ClienteID" y "Rol"
+                                clienteID = reader.GetInt32(reader.GetOrdinal("ClienteID"));
+                                rol = reader.GetString(reader.GetOrdinal("Rol"));
                             }
                         }
                     }
@@ -41,10 +40,8 @@ namespace Pjr_Capa_Datos
             {
                 throw new Exception("Error al validar el usuario: " + ex.Message);
             }
-
             return (rol, clienteID);
         }
-
     }
 }
 

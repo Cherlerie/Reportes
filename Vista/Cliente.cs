@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace Vista
+namespace Vista 
 {
     public partial class Cliente : Form
     {
@@ -20,6 +20,7 @@ namespace Vista
             this.ClienteID = clienteID;
 
         }
+
         private void Cliente_Load(object sender, EventArgs e)
         {
             MessageBox.Show($"ClienteID recibido: {ClienteID}");
@@ -93,7 +94,105 @@ namespace Vista
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login LoginForm = new Login();
+            LoginForm.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Perfil PerfilForm = new Perfil(ClienteID);
+            PerfilForm.Show();
+
+            Administrador.Controls.Clear();
+
+            PerfilForm.TopLevel = false;
+
+            PerfilForm.Dock = DockStyle.Fill; 
+
+            Administrador.Controls.Add(PerfilForm);
+
+           
+            PerfilForm.Show();
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Moras MorasForm = new Moras();
+            MorasForm.Show();
+
+            Administrador.Controls.Clear();
+
+            MorasForm.TopLevel = false;
+
+            MorasForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(MorasForm);
+
+
+            MorasForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Pago PagoForm = new Pago();
+            PagoForm.Show();
+
+            Administrador.Controls.Clear();
+
+            PagoForm.TopLevel = false;
+
+            PagoForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(PagoForm);
+
+
+            PagoForm.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AmortizacionCliente AmortizacionClienteForm = new AmortizacionCliente(ClienteID);
+            AmortizacionClienteForm.Show();
+
+            Administrador.Controls.Clear();
+
+            AmortizacionClienteForm.TopLevel = false;
+
+            AmortizacionClienteForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(AmortizacionClienteForm);
+
+
+            AmortizacionClienteForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InformacionCrediticia InformacionCrediticiaForm = new InformacionCrediticia();
+            InformacionCrediticiaForm.Show();
+
+            Administrador.Controls.Clear();
+
+            InformacionCrediticiaForm.TopLevel = false;
+
+            InformacionCrediticiaForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(InformacionCrediticiaForm);
+
+
+            InformacionCrediticiaForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

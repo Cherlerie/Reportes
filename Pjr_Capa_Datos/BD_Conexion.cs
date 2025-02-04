@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
 namespace Pjr_Capa_Datos
 {
     public class BD_Conexion
     {
-        
-        public SqlConnection conectar()
+        private string connectionString = "Data Source=LAPMASIEL;Initial Catalog=Prestamosdatabase;Integrated Security=true";
+
+        protected SqlConnection conectar()
         {
-            return new SqlConnection("Data Source=LAPMASIEL;Initial Catalog=PrestamosDB;Integrated Security=true");
+            return new SqlConnection(connectionString);
         }
     }
 }

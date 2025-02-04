@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Pjr_Capa_Datos;
+﻿using Pjr_Capa_Datos;
 using Pjr_Capa_Entidad;
+using System;
 
 namespace Pjr_Capa_Negocio
 {
     public class CN_Login
     {
-        private CD_Login loginDAL = new CD_Login();
+        private CD_Login cdLogin = new CD_Login();
 
         public (string Rol, int ClienteID) ValidarUsuario(CE_Login usuario)
         {
@@ -18,8 +14,8 @@ namespace Pjr_Capa_Negocio
             {
                 throw new Exception("El usuario o la contraseña no pueden estar vacíos.");
             }
-
-            return loginDAL.ValidarUsuario(usuario.UsuarioNombre, usuario.Contraseña);
+            // Llama a la capa de Datos y retorna la tupla obtenida.
+            return cdLogin.ValidarUsuario(usuario.UsuarioNombre, usuario.Contraseña);
         }
     }
 }

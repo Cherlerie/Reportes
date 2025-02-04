@@ -13,9 +13,11 @@ namespace Vista
 {
     public partial class Administrador : Form
     {
-        public Administrador()
+        private int ClienteID;
+        public Administrador(int clienteID)
         {
             InitializeComponent();
+            this.ClienteID = clienteID;
         }
 
         private void Administrador_Load(object sender, EventArgs e)
@@ -84,7 +86,98 @@ namespace Vista
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login LoginForm = new Login();
+            LoginForm.Show();
+            this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Perfil PerfilForm = new Perfil(ClienteID);
+            PerfilForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            PerfilForm.TopLevel = false;
+
+            PerfilForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(PerfilForm);
+
+
+            PerfilForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClientesMorosos_Click(object sender, EventArgs e)
+        {
+
+            Moras MorasForm = new Moras();
+            MorasForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            MorasForm.TopLevel = false;
+
+            MorasForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(MorasForm);
+
+
+            MorasForm.Show();
+        }
+
+        private void btnAmortizaciones_Click(object sender, EventArgs e)
+        {
+            Amortizacion AmortizacionForm = new Amortizacion();
+            AmortizacionForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            AmortizacionForm.TopLevel = false;
+
+            AmortizacionForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(AmortizacionForm);
+
+
+            AmortizacionForm.Show();
+        }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            Prestamos PrestamosForm = new Prestamos();
+            PrestamosForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            PrestamosForm.TopLevel = false;
+
+            PrestamosForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(PrestamosForm);
+
+
+            PrestamosForm.Show();
+        }
+
+        private void btnDetallesCliente_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
