@@ -14,7 +14,20 @@ namespace Pjr_Capa_Datos
             {
                 using (SqlConnection connection = conectar())
                 {
-                    string query = "SELECT PrestamoID, MontoPrestamo, TiempoMeses, InteresGenerado, MontoTotal, MontoPendiente, FechaInicio, ProximaFechaPago FROM Prestamo WHERE ClienteID = @ClienteID";
+                    string query = @"
+                        SELECT 
+                            PrestamoID, 
+                            MontoPrestamo, 
+                            TiempoMeses, 
+                            InteresGenerado, 
+                            MontoTotal, 
+                            MontoPendiente, 
+                            FechaInicio, 
+                            ProximaFechaPago,
+                            CAST(PrestamoID AS NVARCHAR(50)) + ' - Monto: ' + CONVERT(NVARCHAR(50), MontoPrestamo) AS Descripcion
+                        FROM Prestamo 
+                        WHERE ClienteID = @ClienteID";
+
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@ClienteID", clienteID);
@@ -24,7 +37,6 @@ namespace Pjr_Capa_Datos
                         }
                     }
                 }
-
             }
             catch (Exception ex)
             {

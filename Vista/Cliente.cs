@@ -94,7 +94,9 @@ namespace Vista
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login LoginForm = new Login();
+            LoginForm.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,13 +104,13 @@ namespace Vista
             Perfil PerfilForm = new Perfil(ClienteID);
             PerfilForm.Show();
 
-            PanelContenedor.Controls.Clear();
+            Administrador.Controls.Clear();
 
             PerfilForm.TopLevel = false;
 
             PerfilForm.Dock = DockStyle.Fill; 
 
-            PanelContenedor.Controls.Add(PerfilForm);
+            Administrador.Controls.Add(PerfilForm);
 
            
             PerfilForm.Show();
@@ -124,13 +126,13 @@ namespace Vista
             Moras MorasForm = new Moras();
             MorasForm.Show();
 
-            PanelContenedor.Controls.Clear();
+            Administrador.Controls.Clear();
 
             MorasForm.TopLevel = false;
 
             MorasForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(MorasForm);
+            Administrador.Controls.Add(MorasForm);
 
 
             MorasForm.Show();
@@ -141,13 +143,13 @@ namespace Vista
             Pago PagoForm = new Pago();
             PagoForm.Show();
 
-            PanelContenedor.Controls.Clear();
+            Administrador.Controls.Clear();
 
             PagoForm.TopLevel = false;
 
             PagoForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(PagoForm);
+            Administrador.Controls.Add(PagoForm);
 
 
             PagoForm.Show();
@@ -156,19 +158,19 @@ namespace Vista
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Amortizacion AmortizacionForm = new Amortizacion();
-            AmortizacionForm.Show();
+            AmortizacionCliente AmortizacionClienteForm = new AmortizacionCliente(ClienteID);
+            AmortizacionClienteForm.Show();
 
-            PanelContenedor.Controls.Clear();
+            Administrador.Controls.Clear();
 
-            AmortizacionForm.TopLevel = false;
+            AmortizacionClienteForm.TopLevel = false;
 
-            AmortizacionForm.Dock = DockStyle.Fill;
+            AmortizacionClienteForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(AmortizacionForm);
+            Administrador.Controls.Add(AmortizacionClienteForm);
 
 
-            AmortizacionForm.Show();
+            AmortizacionClienteForm.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -176,16 +178,21 @@ namespace Vista
             InformacionCrediticia InformacionCrediticiaForm = new InformacionCrediticia();
             InformacionCrediticiaForm.Show();
 
-            PanelContenedor.Controls.Clear();
+            Administrador.Controls.Clear();
 
             InformacionCrediticiaForm.TopLevel = false;
 
             InformacionCrediticiaForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(InformacionCrediticiaForm);
+            Administrador.Controls.Add(InformacionCrediticiaForm);
 
 
             InformacionCrediticiaForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

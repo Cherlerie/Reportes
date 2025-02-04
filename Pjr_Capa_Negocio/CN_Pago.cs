@@ -9,7 +9,6 @@ namespace Pjr_Capa_Negocio
 
         public bool RegistrarPago(int clienteID, int prestamoID, decimal montoPago)
         {
-            // Aquí podrías agregar lógica adicional, por ejemplo, validar que el monto no sea negativo.
             return cdPagos.RegistrarPago(clienteID, prestamoID, montoPago);
         }
 
