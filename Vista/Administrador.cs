@@ -32,7 +32,7 @@ namespace Vista
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Maximized;
             pictureBox3.Visible = false;
            btnRestaurar.Visible = true;
         }
@@ -214,6 +214,11 @@ namespace Vista
         private void button5_Click(object sender, EventArgs e)
         {
             SubmenuReporte.Visible = true;
+        }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
