@@ -26,7 +26,8 @@ namespace Vista.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Integrated Security=True;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Prestamosdatabase;Integrated Security=True;" +
+            "TrustServerCertificate=True")]
         public string cn {
             get {
                 return ((string)(this["cn"]));
