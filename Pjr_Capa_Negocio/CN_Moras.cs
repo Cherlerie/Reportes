@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using Pjr_Capa_Datos;
 
 namespace Pjr_Capa_Negocio
 {
-    internal class CN_Moras
+    public class CN_Moras
     {
+        private CD_Moras cdMoras = new CD_Moras();
+
+        public DataTable BuscarMorosos(string criterio)
+        {
+            return cdMoras.BuscarMorosos(criterio);
+        }
     }
 }

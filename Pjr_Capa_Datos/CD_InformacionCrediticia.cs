@@ -21,11 +21,12 @@ namespace Pjr_Capa_Datos
                             c.Correo, 
                             c.Telefono, 
                             c.Direccion, 
-                            c.Usuario,
+                            c.Usuario, 
                             c.Sueldo, 
                             c.Garantia,
                             COUNT(p.PrestamoID) AS NumeroPrestamos,
-                            ISNULL(SUM(p.MontoTotal), 0) AS TotalPrestado
+                            ISNULL(SUM(p.MontoTotal), 0) AS TotalPrestado,
+                            ISNULL((SELECT COUNT(*) FROM Moras m WHERE m.ClienteID = c.ClienteID AND m.CantidadMoras >= 1), 0) AS MorasAcumuladas
                         FROM Cliente c
                         LEFT JOIN Prestamo p ON c.ClienteID = p.ClienteID
                         WHERE c.ClienteID = @ClienteID
