@@ -18,7 +18,7 @@ namespace Vista
         public Moras()
         {
             InitializeComponent();
-            this.clienteID = clienteID;
+            
 
         }
     }
