@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -73,11 +73,11 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Amortizacion.cs">
+    <Compile Include="AmortizacionAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Amortizacion.Designer.cs">
-      <DependentUpon>Amortizacion.cs</DependentUpon>
+    <Compile Include="AmortizacionAdmin.Designer.cs">
+      <DependentUpon>AmortizacionAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="AmortizacionCliente.cs">
       <SubType>Form</SubType>
@@ -109,11 +109,17 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="InformacionCrediticia.cs">
+    <Compile Include="GestionPrestamos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InformacionCrediticia.Designer.cs">
-      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    <Compile Include="GestionPrestamos.Designer.cs">
+      <DependentUpon>GestionPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionCrediticiaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacionCrediticiaCliente.Designer.cs">
+      <DependentUpon>InformacionCrediticiaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="InformacionCrediticiaAdmin.cs">
       <SubType>Form</SubType>
@@ -184,8 +190,8 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Amortizacion.resx">
-      <DependentUpon>Amortizacion.cs</DependentUpon>
+    <EmbeddedResource Include="AmortizacionAdmin.resx">
+      <DependentUpon>AmortizacionAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AmortizacionCliente.resx">
       <DependentUpon>AmortizacionCliente.cs</DependentUpon>
@@ -202,8 +208,11 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformacionCrediticia.resx">
-      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    <EmbeddedResource Include="GestionPrestamos.resx">
+      <DependentUpon>GestionPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacionCrediticiaCliente.resx">
+      <DependentUpon>InformacionCrediticiaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformacionCrediticiaAdmin.resx">
       <DependentUpon>InformacionCrediticiaAdmin.cs</DependentUpon>
@@ -285,6 +294,7 @@
     <None Include="Reportes\DS_Reporte5.xss">
       <DependentUpon>DS_Reporte5.xsd</DependentUpon>
     </None>
+
     <None Include="Reportes\DS_Reportes.xsc">
       <DependentUpon>DS_Reportes.xsd</DependentUpon>
     </None>
@@ -350,6 +360,16 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pjr_Capa_Entidad\Pjr_Capa_Entidad.csproj">
+      <Project>{b92228d5-a724-4026-8f23-e366c911509d}</Project>
+      <Name>Pjr_Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjr_Capa_Negocio\Pjr_Capa_Negocio.csproj">
+      <Project>{e3f1e176-fdc5-4aeb-97f4-6c80c4964b16}</Project>
+      <Name>Pjr_Capa_Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class InformacionCrediticia
+    partial class InformacionCrediticiaCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTotalPrestado = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblClienteID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,9 +51,6 @@
             this.lblSueldo = new System.Windows.Forms.Label();
             this.lblNumeroPrestamos = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblClienteID = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTotalPrestado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,18 +60,50 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.lblTotalPrestado);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblClienteID);
-            this.panel1.Location = new System.Drawing.Point(-20, -10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(-15, -8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 814);
+            this.panel1.Size = new System.Drawing.Size(160, 661);
             this.panel1.TabIndex = 1;
+            // 
+            // lblTotalPrestado
+            // 
+            this.lblTotalPrestado.AutoSize = true;
+            this.lblTotalPrestado.Location = new System.Drawing.Point(65, 555);
+            this.lblTotalPrestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalPrestado.Name = "lblTotalPrestado";
+            this.lblTotalPrestado.Size = new System.Drawing.Size(48, 15);
+            this.lblTotalPrestado.TabIndex = 2;
+            this.lblTotalPrestado.Text = "label11";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Vista.Properties.Resources.cancel_circle_icon_1499652;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lblClienteID
+            // 
+            this.lblClienteID.AutoSize = true;
+            this.lblClienteID.BackColor = System.Drawing.Color.Transparent;
+            this.lblClienteID.Location = new System.Drawing.Point(242, 521);
+            this.lblClienteID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblClienteID.Name = "lblClienteID";
+            this.lblClienteID.Size = new System.Drawing.Size(48, 15);
+            this.lblClienteID.TabIndex = 0;
+            this.lblClienteID.Text = "label11";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(318, 145);
+            this.label1.Location = new System.Drawing.Point(238, 118);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 41);
             this.label1.TabIndex = 2;
@@ -81,7 +113,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(788, 518);
+            this.label2.Location = new System.Drawing.Point(591, 421);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 41);
             this.label2.TabIndex = 3;
@@ -91,7 +124,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(565, 518);
+            this.label3.Location = new System.Drawing.Point(424, 421);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 41);
             this.label3.TabIndex = 4;
@@ -101,7 +135,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(841, 145);
+            this.label4.Location = new System.Drawing.Point(631, 118);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 41);
             this.label4.TabIndex = 5;
@@ -111,7 +146,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(822, 329);
+            this.label5.Location = new System.Drawing.Point(616, 267);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 41);
             this.label5.TabIndex = 6;
@@ -121,7 +157,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(318, 329);
+            this.label6.Location = new System.Drawing.Point(238, 267);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 41);
             this.label6.TabIndex = 7;
@@ -131,7 +168,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(567, 329);
+            this.label7.Location = new System.Drawing.Point(425, 267);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 41);
             this.label7.TabIndex = 8;
@@ -141,7 +179,8 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(565, 145);
+            this.label8.Location = new System.Drawing.Point(424, 118);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 41);
             this.label8.TabIndex = 9;
@@ -151,7 +190,8 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(318, 518);
+            this.label9.Location = new System.Drawing.Point(238, 421);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 41);
             this.label9.TabIndex = 10;
@@ -162,9 +202,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(472, 34);
+            this.label10.Location = new System.Drawing.Point(354, 28);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(309, 60);
+            this.label10.Size = new System.Drawing.Size(299, 58);
             this.label10.TabIndex = 11;
             this.label10.Text = "Informa crediticia";
             // 
@@ -173,7 +214,8 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblNombre.Location = new System.Drawing.Point(329, 207);
+            this.lblNombre.Location = new System.Drawing.Point(247, 168);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(67, 30);
             this.lblNombre.TabIndex = 12;
@@ -184,7 +226,8 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblUsuario.Location = new System.Drawing.Point(857, 207);
+            this.lblUsuario.Location = new System.Drawing.Point(643, 168);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(67, 30);
             this.lblUsuario.TabIndex = 13;
@@ -195,7 +238,8 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblApellido.Location = new System.Drawing.Point(581, 207);
+            this.lblApellido.Location = new System.Drawing.Point(436, 168);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(67, 30);
             this.lblApellido.TabIndex = 14;
@@ -206,7 +250,8 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTelefono.Location = new System.Drawing.Point(340, 398);
+            this.lblTelefono.Location = new System.Drawing.Point(255, 323);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(67, 30);
             this.lblTelefono.TabIndex = 15;
@@ -217,7 +262,8 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblDireccion.Location = new System.Drawing.Point(857, 398);
+            this.lblDireccion.Location = new System.Drawing.Point(643, 323);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(67, 30);
             this.lblDireccion.TabIndex = 16;
@@ -228,7 +274,8 @@
             this.lblGarantia.AutoSize = true;
             this.lblGarantia.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGarantia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblGarantia.Location = new System.Drawing.Point(329, 569);
+            this.lblGarantia.Location = new System.Drawing.Point(247, 462);
+            this.lblGarantia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGarantia.Name = "lblGarantia";
             this.lblGarantia.Size = new System.Drawing.Size(67, 30);
             this.lblGarantia.TabIndex = 17;
@@ -239,7 +286,8 @@
             this.lblSueldo.AutoSize = true;
             this.lblSueldo.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSueldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblSueldo.Location = new System.Drawing.Point(581, 579);
+            this.lblSueldo.Location = new System.Drawing.Point(436, 470);
+            this.lblSueldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSueldo.Name = "lblSueldo";
             this.lblSueldo.Size = new System.Drawing.Size(67, 30);
             this.lblSueldo.TabIndex = 18;
@@ -250,7 +298,8 @@
             this.lblNumeroPrestamos.AutoSize = true;
             this.lblNumeroPrestamos.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroPrestamos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblNumeroPrestamos.Location = new System.Drawing.Point(857, 579);
+            this.lblNumeroPrestamos.Location = new System.Drawing.Point(643, 470);
+            this.lblNumeroPrestamos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroPrestamos.Name = "lblNumeroPrestamos";
             this.lblNumeroPrestamos.Size = new System.Drawing.Size(67, 30);
             this.lblNumeroPrestamos.TabIndex = 19;
@@ -261,48 +310,21 @@
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblCorreo.Location = new System.Drawing.Point(569, 398);
+            this.lblCorreo.Location = new System.Drawing.Point(427, 323);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(67, 30);
             this.lblCorreo.TabIndex = 20;
             this.lblCorreo.Text = "label19";
             // 
-            // lblClienteID
+            // InformacionCrediticiaCliente
             // 
-            this.lblClienteID.AutoSize = true;
-            this.lblClienteID.BackColor = System.Drawing.Color.Transparent;
-            this.lblClienteID.Location = new System.Drawing.Point(88, 627);
-            this.lblClienteID.Name = "lblClienteID";
-            this.lblClienteID.Size = new System.Drawing.Size(51, 16);
-            this.lblClienteID.TabIndex = 0;
-            this.lblClienteID.Text = "label11";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Vista.Properties.Resources.cancel_circle_icon_1499652;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblTotalPrestado
-            // 
-            this.lblTotalPrestado.AutoSize = true;
-            this.lblTotalPrestado.Location = new System.Drawing.Point(87, 683);
-            this.lblTotalPrestado.Name = "lblTotalPrestado";
-            this.lblTotalPrestado.Size = new System.Drawing.Size(51, 16);
-            this.lblTotalPrestado.TabIndex = 2;
-            this.lblTotalPrestado.Text = "label11";
-            // 
-            // InformacionCrediticia
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 741);
+            this.ClientSize = new System.Drawing.Size(790, 602);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.lblNumeroPrestamos);
+            this.Controls.Add(this.lblClienteID);
             this.Controls.Add(this.lblSueldo);
             this.Controls.Add(this.lblGarantia);
             this.Controls.Add(this.lblDireccion);
@@ -322,10 +344,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "InformacionCrediticia";
+            this.Name = "InformacionCrediticiaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "InformacionCrediticia";
+            this.Load += new System.EventHandler(this.InformacionCrediticiaCliente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

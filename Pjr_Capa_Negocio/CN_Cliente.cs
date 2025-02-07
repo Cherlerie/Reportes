@@ -11,5 +11,10 @@ namespace Pjr_Capa_Negocio
         {
             return cdCliente.BuscarCliente(criterio);
         }
+
+        public DataTable ObtenerClientes()
+        {
+            return cdCliente.ObtenerClientes();
+        }
     }
 }

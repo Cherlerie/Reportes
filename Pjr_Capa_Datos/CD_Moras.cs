@@ -41,5 +41,30 @@ namespace Pjr_Capa_Datos
             }
             return dt;
         }
+
+        public DataTable ObtenerMorasPorCliente(int clienteID)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection conn = conectar())
+                {
+                    conn.Open();
+                    string query = "SELECT MoraID, ClienteID, CantidadMoras FROM Moras WHERE ClienteID = @ClienteID";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@ClienteID", clienteID);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener las moras: " + ex.Message);
+            }
+            return dt;
+        }
     }
+
 }
