@@ -76,7 +76,6 @@
   <ItemGroup>
     <Compile Include="CN_Amortizacion.cs" />
     <Compile Include="CN_Cliente.cs" />
-    <Compile Include="CN_Clientes.cs" />
     <Compile Include="CN_InformacionCrediticia.cs" />
     <Compile Include="CN_Login.cs" />
     <Compile Include="CN_Pago.cs" />

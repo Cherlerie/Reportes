@@ -8,7 +8,7 @@ namespace Vista
     public partial class InformacionCrediticiaAdmin : Form
     {
         private CN_InformacionCrediticia cnInfo = new CN_InformacionCrediticia();
-        private CN_Clientes cnClientes = new CN_Clientes();
+        private CN_Cliente cnCliente = new CN_Cliente();
 
         public InformacionCrediticiaAdmin()
         {
@@ -24,7 +24,7 @@ namespace Vista
         {
             try
             {
-                DataTable dtClientes = cnClientes.ObtenerClientes();
+                DataTable dtClientes = cnCliente.ObtenerClientes();
                 if (dtClientes != null && dtClientes.Rows.Count > 0)
                 {
                     comboBox1.DataSource = dtClientes;

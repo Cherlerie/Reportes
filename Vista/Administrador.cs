@@ -156,7 +156,7 @@ namespace Vista
 
         private void btnAmortizaciones_Click(object sender, EventArgs e)
         {
-            Amortizacion AmortizacionForm = new Amortizacion();
+            AmortizacionAdmin AmortizacionForm = new AmortizacionAdmin();
             AmortizacionForm.Show();
 
             PanelContenedor.Controls.Clear();
@@ -173,19 +173,19 @@ namespace Vista
 
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            Prestamos PrestamosForm = new Prestamos();
-            PrestamosForm.Show();
+            GestionPrestamos GestionPrestamosForm = new GestionPrestamos();
+            GestionPrestamosForm.Show();
 
             PanelContenedor.Controls.Clear();
 
-            PrestamosForm.TopLevel = false;
+            GestionPrestamosForm.TopLevel = false;
 
-            PrestamosForm.Dock = DockStyle.Fill;
+            GestionPrestamosForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(PrestamosForm);
+            PanelContenedor.Controls.Add(GestionPrestamosForm);
 
 
-            PrestamosForm.Show();
+            GestionPrestamosForm.Show();
         }
 
         private void btnDetallesCliente_Click(object sender, EventArgs e)

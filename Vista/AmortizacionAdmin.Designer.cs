@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class Amortizacion
+    partial class AmortizacionAdmin
     {
         /// <summary>
         /// Required designer variable.
