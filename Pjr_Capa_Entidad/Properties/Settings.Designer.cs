@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vista.Properties {
+namespace Pjr_Capa_Entidad.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,22 +26,21 @@ namespace Vista.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Prestamosdatabase;Integrated Security=True;" +
-            "TrustServerCertificate=True")]
-        public string cn {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SAMUEL-DESKTOP;Initial Catalog=Prestamosdatabase;Integrated Security=" +
+            "True;TrustServerCertificate=True")]
+        public string PrestamosdatabaseConnectionString {
             get {
-                return ((string)(this["cn"]));
+                return ((string)(this["PrestamosdatabaseConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SAMUEL-DESKTOP;Initial Catalog=Prestamosdatabase;Integrated Security=" +
-            "True;TrustServerCertificate=True")]
-        public string PrestamosdatabaseConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Integrated Security=True;TrustServerCertificate=True")]
+        public string ConnectionString {
             get {
-                return ((string)(this["PrestamosdatabaseConnectionString"]));
+                return ((string)(this["ConnectionString"]));
             }
         }
     }
