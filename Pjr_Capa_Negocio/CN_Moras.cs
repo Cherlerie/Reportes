@@ -11,5 +11,10 @@ namespace Pjr_Capa_Negocio
         {
             return cdMoras.BuscarMorosos(criterio);
         }
+
+        public DataTable ObtenerMoras(int clienteID)
+        {
+            return cdMoras.ObtenerMorasPorCliente(clienteID);
+        }
     }
 }

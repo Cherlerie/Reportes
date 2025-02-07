@@ -1,25 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pjr_Capa_Negocio;
 
-namespace Vista
+namespace Pjr_Capa_Presentacion
 {
     public partial class Moras : Form
     {
-        private CN_Perfil cnPerfil = new CN_Perfil();
-        private int clienteID;
-        public Moras()
+        private int ClienteID;
+        private CN_Moras negocioMoras = new CN_Moras();
+
+        public Moras(int clienteID)
         {
             InitializeComponent();
-            this.clienteID = clienteID;
+            this.ClienteID = clienteID;
+            CargarMoras();
+        }
 
+        private void CargarMoras()
+        {
+            try
+            {
+                DataTable dt = negocioMoras.ObtenerMoras(ClienteID);
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las moras: " + ex.Message);
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

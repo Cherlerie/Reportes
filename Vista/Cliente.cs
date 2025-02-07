@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Pjr_Capa_Presentacion;
 
 namespace Vista 
 {
@@ -75,7 +76,18 @@ namespace Vista
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-           SubmenuReportes.Visible = true;
+            Prestamos PrestamosForm = new Prestamos(ClienteID);
+
+            Administrador.Controls.Clear();
+
+            PrestamosForm.TopLevel = false;
+
+            PrestamosForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(PrestamosForm);
+
+            PrestamosForm.Show();
+            SubmenuReportes.Visible = true;
         }
 
         private void btnrptventa_Click(object sender, EventArgs e)
@@ -124,8 +136,7 @@ namespace Vista
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Moras MorasForm = new Moras();
-            MorasForm.Show();
+            Moras MorasForm = new Moras(ClienteID);
 
             Administrador.Controls.Clear();
 
@@ -134,7 +145,6 @@ namespace Vista
             MorasForm.Dock = DockStyle.Fill;
 
             Administrador.Controls.Add(MorasForm);
-
 
             MorasForm.Show();
         }
@@ -176,7 +186,7 @@ namespace Vista
 
         private void button5_Click(object sender, EventArgs e)
         {
-            InformacionCrediticia InformacionCrediticiaForm = new InformacionCrediticia(ClienteID);
+            InformacionCrediticiaCliente InformacionCrediticiaForm = new InformacionCrediticiaCliente(ClienteID);
             InformacionCrediticiaForm.Show();
 
             Administrador.Controls.Clear();

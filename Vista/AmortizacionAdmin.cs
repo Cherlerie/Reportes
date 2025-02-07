@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Amortizacion : Form
+    public partial class AmortizacionAdmin : Form
     {
-        public Amortizacion()
+        public AmortizacionAdmin()
         {
             InitializeComponent();
         }

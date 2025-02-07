@@ -32,7 +32,7 @@ namespace Vista
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Maximized;
             pictureBox3.Visible = false;
            btnRestaurar.Visible = true;
         }
@@ -156,7 +156,7 @@ namespace Vista
 
         private void btnAmortizaciones_Click(object sender, EventArgs e)
         {
-            Amortizacion AmortizacionForm = new Amortizacion();
+            AmortizacionAdmin AmortizacionForm = new AmortizacionAdmin();
             AmortizacionForm.Show();
 
             PanelContenedor.Controls.Clear();
@@ -173,19 +173,19 @@ namespace Vista
 
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            Prestamos PrestamosForm = new Prestamos();
-            PrestamosForm.Show();
+            GestionPrestamos GestionPrestamosForm = new GestionPrestamos();
+            GestionPrestamosForm.Show();
 
             PanelContenedor.Controls.Clear();
 
-            PrestamosForm.TopLevel = false;
+            GestionPrestamosForm.TopLevel = false;
 
-            PrestamosForm.Dock = DockStyle.Fill;
+            GestionPrestamosForm.Dock = DockStyle.Fill;
 
-            PanelContenedor.Controls.Add(PrestamosForm);
+            PanelContenedor.Controls.Add(GestionPrestamosForm);
 
 
-            PrestamosForm.Show();
+            GestionPrestamosForm.Show();
         }
 
         private void btnDetallesCliente_Click(object sender, EventArgs e)
@@ -214,6 +214,17 @@ namespace Vista
         private void button5_Click(object sender, EventArgs e)
         {
             SubmenuReporte.Visible = true;
+        }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Reportes.FormReporte4 oRpt1 = new Reportes.FormReporte4();
+            oRpt1.Show();
         }
     }
 }

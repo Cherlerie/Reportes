@@ -38,5 +38,17 @@ namespace Vista
                 MessageBox.Show("Error al buscar morosos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Reportes.FormReporte4 oRpt1 = new Reportes.FormReporte4();
+            oRpt1.txt_p1.Text = txtBuscar.Text;
+            oRpt1.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }
