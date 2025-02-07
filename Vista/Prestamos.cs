@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pjr_Capa_Negocio;
-
+ 
 namespace Vista
 {
     public partial class Prestamos : Form

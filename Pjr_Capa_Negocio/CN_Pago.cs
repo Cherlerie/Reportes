@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using Pjr_Capa_Datos;
 
 namespace Pjr_Capa_Negocio
@@ -15,6 +16,19 @@ namespace Pjr_Capa_Negocio
         public DataTable ObtenerHistorialPagos(int prestamoID)
         {
             return cdPagos.ObtenerHistorialPagos(prestamoID);
+        }
+
+        public DataTable ObtenerPagos(int clienteID)
+        {
+            return cdPagos.ObtenerPagos(clienteID);
+        }
+
+        public void RegistrarPago1(Pago pago)
+        {
+            if (pago.MontoAbonado <= 0)
+                throw new Exception("El monto abonado debe ser mayor a 0.");
+
+            cdPagos.RegistrarPago1(pago);
         }
     }
 }

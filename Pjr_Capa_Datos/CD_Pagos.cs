@@ -55,5 +55,53 @@ namespace Pjr_Capa_Datos
             }
             return dt;
         }
+        public DataTable ObtenerPagos(int clienteID)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection connection = conectar())
+                {
+                    using (SqlCommand cmd = new SqlCommand("sp_ObtenerPagos", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ClienteID", clienteID);
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener los pagos: " + ex.Message);
+            }
+            return dt;
+        }
+
+        public void RegistrarPago1(Pago pago)
+        {
+            try
+            {
+                using (SqlConnection connection = conectar())
+                {
+                    using (SqlCommand cmd = new SqlCommand("sp_RegistrarPago", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ClienteID", pago.ClienteID);
+                        cmd.Parameters.AddWithValue("@PrestamoID", pago.PrestamoID);
+                        cmd.Parameters.AddWithValue("@MontoAbonado", pago.MontoAbonado);
+                        cmd.Parameters.AddWithValue("@FechaPago", pago.FechaPago);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al registrar el pago: " + ex.Message);
+            }
+        }
     }
 }
