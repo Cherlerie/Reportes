@@ -5,18 +5,18 @@ using Pjr_Capa_Negocio;
 
 namespace Vista
 {
-    public partial class InformacionCrediticia : Form
+    public partial class InformacionCrediticiaCliente : Form
     {
         private CN_InformacionCrediticia cnInfo = new CN_InformacionCrediticia();
         private int clienteID;
 
-        public InformacionCrediticia(int clienteID)
+        public InformacionCrediticiaCliente(int clienteID)
         {
             InitializeComponent();
             this.clienteID = clienteID;
         }
 
-        private void InformacionCrediticia_Load(object sender, EventArgs e)
+        private void InformacionCrediticiaCliente_Load(object sender, EventArgs e)
         {
             CargarInformacionCrediticia();
         }
@@ -50,6 +50,11 @@ namespace Vista
             {
                 MessageBox.Show("Error al cargar la información crediticia: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

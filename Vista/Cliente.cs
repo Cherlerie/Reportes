@@ -175,7 +175,7 @@ namespace Vista
 
         private void button5_Click(object sender, EventArgs e)
         {
-            InformacionCrediticia InformacionCrediticiaForm = new InformacionCrediticia(ClienteID);
+            InformacionCrediticiaCliente InformacionCrediticiaForm = new InformacionCrediticiaCliente(ClienteID);
             InformacionCrediticiaForm.Show();
 
             Administrador.Controls.Clear();

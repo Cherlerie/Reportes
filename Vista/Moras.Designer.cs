@@ -73,9 +73,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(405, 26);
+            this.label1.Location = new System.Drawing.Point(406, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 56);
+            this.label1.Size = new System.Drawing.Size(148, 71);
             this.label1.TabIndex = 2;
             this.label1.Text = "Moras";
             // 
