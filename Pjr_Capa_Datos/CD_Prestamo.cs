@@ -7,6 +7,41 @@ namespace Pjr_Capa_Datos
 {
     public class CD_Prestamo : BD_Conexion
     {
+        
+        public bool InsertarPrestamo(CE_Prestamo prestamo)
+        {
+            try
+            {
+                using (SqlConnection connection = conectar())
+                {
+                    connection.Open();
+                    string query = @"
+                        INSERT INTO Prestamo 
+                        (ClienteID, MontoPrestamo, TiempoMeses, InteresGenerado, MontoTotal, MontoPendiente, FechaInicio, ProximaFechaPago)
+                        VALUES 
+                        (@ClienteID, @MontoPrestamo, @TiempoMeses, @InteresGenerado, @MontoTotal, @MontoPendiente, @FechaInicio, @ProximaFechaPago)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ClienteID", prestamo.ClienteID);
+                        cmd.Parameters.AddWithValue("@MontoPrestamo", prestamo.MontoPrestamo);
+                        cmd.Parameters.AddWithValue("@TiempoMeses", prestamo.TiempoMeses);
+                        cmd.Parameters.AddWithValue("@InteresGenerado", prestamo.InteresGenerado);
+                        cmd.Parameters.AddWithValue("@MontoTotal", prestamo.MontoTotal);
+                        cmd.Parameters.AddWithValue("@MontoPendiente", prestamo.MontoPendiente);
+                        cmd.Parameters.AddWithValue("@FechaInicio", prestamo.FechaInicio);
+                        cmd.Parameters.AddWithValue("@ProximaFechaPago", prestamo.ProximaFechaPago);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al insertar el préstamo: " + ex.Message);
+            }
+        }
+
         public DataTable ObtenerPrestamosPorCliente(int clienteID)
         {
             DataTable dt = new DataTable();
@@ -40,7 +75,7 @@ namespace Pjr_Capa_Datos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al obtener los préstamos: " + ex.Message);
+                throw new Exception("Error al obtener préstamos por cliente: " + ex.Message);
             }
             return dt;
         }

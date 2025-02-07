@@ -76,7 +76,18 @@ namespace Vista
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-           SubmenuReportes.Visible = true;
+            Prestamos PrestamosForm = new Prestamos(ClienteID);
+
+            Administrador.Controls.Clear();
+
+            PrestamosForm.TopLevel = false;
+
+            PrestamosForm.Dock = DockStyle.Fill;
+
+            Administrador.Controls.Add(PrestamosForm);
+
+            PrestamosForm.Show();
+            SubmenuReportes.Visible = true;
         }
 
         private void btnrptventa_Click(object sender, EventArgs e)
