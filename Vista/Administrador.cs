@@ -82,6 +82,9 @@ namespace Vista
         private void button11_Click(object sender, EventArgs e)
         {
             SubmenuReporte.Visible = false;
+            Reportes.FormReorte3 oRpt3 = new Reportes.FormReorte3();
+            oRpt3.Show();
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -219,6 +222,16 @@ namespace Vista
         private void PanelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SubmenuReporte.Visible = false;
         }
     }
 }
