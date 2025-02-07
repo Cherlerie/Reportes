@@ -79,6 +79,41 @@ namespace Pjr_Capa_Datos
             }
             return dt;
         }
+        public DataTable ObtenerTodosLosPrestamos()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection connection = conectar())
+                {
+                    string query = @"
+                        SELECT 
+                            PrestamoID, 
+                            ClienteID,
+                            MontoPrestamo, 
+                            TiempoMeses, 
+                            InteresGenerado, 
+                            MontoTotal, 
+                            MontoPendiente, 
+                            FechaInicio, 
+                            ProximaFechaPago
+                        FROM Prestamo";
+
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener todos los préstamos: " + ex.Message);
+            }
+            return dt;
+        }
 
         public DataRow ObtenerDetallePrestamo(int prestamoID)
         {
@@ -106,6 +141,8 @@ namespace Pjr_Capa_Datos
                 return dt.Rows[0];
             else
                 return null;
+
+
         }
     }
 }

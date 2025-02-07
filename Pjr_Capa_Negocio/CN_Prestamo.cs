@@ -54,8 +54,11 @@ namespace Pjr_Capa_Negocio
         {
             return cdPrestamo.ObtenerDetallePrestamo(prestamoID);
         }
+        public DataTable ObtenerTodosLosPrestamos()
+        {
+            return cdPrestamo.ObtenerTodosLosPrestamos();
+        }
 
-       
     }
 }
 

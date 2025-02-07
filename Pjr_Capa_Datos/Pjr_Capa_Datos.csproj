@@ -77,7 +77,6 @@
     <Compile Include="BD_Conexion.cs" />
     <Compile Include="CD_Amortizacion.cs" />
     <Compile Include="CD_Cliente.cs" />
-    <Compile Include="CD_Clientes.cs" />
     <Compile Include="CD_InformacionCrediticia.cs" />
     <Compile Include="CD_Login.cs" />
     <Compile Include="CD_Moras.cs" />
