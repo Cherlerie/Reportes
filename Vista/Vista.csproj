@@ -109,11 +109,11 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="InformacionCrediticia.cs">
+    <Compile Include="InformacionCrediticiaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InformacionCrediticia.Designer.cs">
-      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    <Compile Include="InformacionCrediticiaCliente.Designer.cs">
+      <DependentUpon>InformacionCrediticiaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="InformacionCrediticiaAdmin.cs">
       <SubType>Form</SubType>
@@ -191,8 +191,8 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformacionCrediticia.resx">
-      <DependentUpon>InformacionCrediticia.cs</DependentUpon>
+    <EmbeddedResource Include="InformacionCrediticiaCliente.resx">
+      <DependentUpon>InformacionCrediticiaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformacionCrediticiaAdmin.resx">
       <DependentUpon>InformacionCrediticiaAdmin.cs</DependentUpon>
@@ -250,16 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Pjr_Capa_Entidad\Pjr_Capa_Entidad.csproj">
-      <Project>{b92228d5-a724-4026-8f23-e366c911509d}</Project>
-      <Name>Pjr_Capa_Entidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Pjr_Capa_Negocio\Pjr_Capa_Negocio.csproj">
-      <Project>{e3f1e176-fdc5-4aeb-97f4-6c80c4964b16}</Project>
-      <Name>Pjr_Capa_Negocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Reportes\DS_Reportes.xsc">
@@ -327,6 +317,16 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pjr_Capa_Entidad\Pjr_Capa_Entidad.csproj">
+      <Project>{b92228d5-a724-4026-8f23-e366c911509d}</Project>
+      <Name>Pjr_Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjr_Capa_Negocio\Pjr_Capa_Negocio.csproj">
+      <Project>{e3f1e176-fdc5-4aeb-97f4-6c80c4964b16}</Project>
+      <Name>Pjr_Capa_Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

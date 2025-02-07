@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CE_Amortizacion.cs" />
+    <Compile Include="CE_InformacionCrediticia.cs" />
     <Compile Include="CE_Login.cs" />
     <Compile Include="CE_Pago.cs" />
     <Compile Include="CE_perfil.cs" />

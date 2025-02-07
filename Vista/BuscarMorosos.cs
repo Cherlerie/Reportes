@@ -45,5 +45,10 @@ namespace Vista
             oRpt1.txt_p1.Text = txtBuscar.Text;
             oRpt1.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }

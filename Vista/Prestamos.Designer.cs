@@ -63,7 +63,7 @@
             this.button1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(230, 169);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 35);
+            this.button1.Size = new System.Drawing.Size(94, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(391, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 56);
+            this.label1.Size = new System.Drawing.Size(228, 71);
             this.label1.TabIndex = 4;
             this.label1.Text = "Prestamos";
             // 
