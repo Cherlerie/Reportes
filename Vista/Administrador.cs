@@ -18,7 +18,9 @@ namespace Vista
         {
             InitializeComponent();
             this.ClienteID = clienteID;
-        } 
+        }
+
+
 
         private void Administrador_Load(object sender, EventArgs e)
         {
@@ -71,7 +73,9 @@ namespace Vista
 
         private void button9_Click(object sender, EventArgs e)
         {
-            SubmenuReporte.Visible= false;
+            Reportes.FormReporte1 formReporte1 = new Reportes.FormReporte1();
+            formReporte1.Show();
+            SubmenuReporte.Visible = false;
         }
 
         private void button10_Click(object sender, EventArgs e)
