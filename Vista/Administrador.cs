@@ -116,6 +116,19 @@ namespace Vista
         private void button2_Click(object sender, EventArgs e)
         {
 
+            BuscarPagos BuscarPagosForm = new BuscarPagos();
+            BuscarPagosForm.Show();
+
+            PanelContenedor.Controls.Clear();
+
+            BuscarPagosForm.TopLevel = false;
+
+            BuscarPagosForm.Dock = DockStyle.Fill;
+
+            PanelContenedor.Controls.Add(BuscarPagosForm);
+
+
+            BuscarPagosForm.Show();
         }
 
         private void button12_Click(object sender, EventArgs e)

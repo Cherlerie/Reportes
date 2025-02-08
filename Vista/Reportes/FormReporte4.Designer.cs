@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dS_Reportes = new Vista.Reportes.DS_Reportes();
+            this.dS_Reportes = new Vista.Reportes.DS_Reportes1();
             this.dSReportesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.prestamosdatabaseDataSet = new Vista.PrestamosdatabaseDataSet();
             this.spmorasporclienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -111,7 +111,7 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource spmorasporclienteBindingSource;
         private PrestamosdatabaseDataSet prestamosdatabaseDataSet;
-        private DS_Reportes dS_Reportes;
+        private DS_Reportes1 dS_Reportes;
         private System.Windows.Forms.BindingSource dSReportesBindingSource;
         private PrestamosdatabaseDataSetTableAdapters.sp_morasporclienteTableAdapter sp_morasporclienteTableAdapter;
         public System.Windows.Forms.TextBox txt_p1;

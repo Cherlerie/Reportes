@@ -7,9 +7,7 @@ namespace Pjr_Capa_Datos
 {
     public class CD_Login : BD_Conexion
     {
-        /// <summary>
-        /// Valida el login y devuelve una tupla (Rol, ClienteID).
-        /// </summary>
+        
         public (string Rol, int ClienteID) ValidarUsuario(string usuario, string contraseña)
         {
             int clienteID = 0;
@@ -28,7 +26,6 @@ namespace Pjr_Capa_Datos
                         {
                             if (reader.Read())
                             {
-                                // Se asume que el SP retorna columnas "ClienteID" y "Rol"
                                 clienteID = reader.GetInt32(reader.GetOrdinal("ClienteID"));
                                 rol = reader.GetString(reader.GetOrdinal("Rol"));
                             }

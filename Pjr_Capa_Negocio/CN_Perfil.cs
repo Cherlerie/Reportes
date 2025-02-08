@@ -14,10 +14,9 @@ namespace Pjr_Capa_Negocio
 
         public bool EditarPerfil(CE_perfil perfil)
         {
-            // Se envían 8 parámetros: id, usuario, contraseña, nombre, apellido, correo, dirección y teléfono.
             return cdPerfil.EditarPerfil(
                 perfil.ClienteID1,
-                perfil.Usuario1,          // Ahora se incluye el valor del usuario
+                perfil.Usuario1,          
                 perfil.Contraseña1,
                 perfil.Nombre1,
                 perfil.Apellido1,
