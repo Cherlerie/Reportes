@@ -30,24 +30,39 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dS_Reportes = new Vista.Reportes.DS_Reportes1();
-            this.dSReportesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prestamosdatabaseDataSet = new Vista.PrestamosdatabaseDataSet();
             this.spmorasporclienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prestamosdatabaseDataSet = new Vista.PrestamosdatabaseDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dS_Reportes = new Vista.Reportes.DS_Reporte1();
+            this.dSReportesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_morasporclienteTableAdapter = new Vista.PrestamosdatabaseDataSetTableAdapters.sp_morasporclienteTableAdapter();
             this.txt_p1 = new System.Windows.Forms.TextBox();
+            this.dS_Reporte4 = new Vista.Reportes.DS_Reporte4();
+            this.spmorasporclienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sp_morasporclienteTableAdapter1 = new Vista.Reportes.DS_Reporte4TableAdapters.sp_morasporclienteTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prestamosdatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Reportes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSReportesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prestamosdatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Reporte4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // spmorasporclienteBindingSource
+            // 
+            this.spmorasporclienteBindingSource.DataMember = "sp_morasporcliente";
+            this.spmorasporclienteBindingSource.DataSource = this.prestamosdatabaseDataSet;
+            // 
+            // prestamosdatabaseDataSet
+            // 
+            this.prestamosdatabaseDataSet.DataSetName = "PrestamosdatabaseDataSet";
+            this.prestamosdatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.spmorasporclienteBindingSource;
+            reportDataSource1.Value = this.spmorasporclienteBindingSource1;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista.Reportes.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
@@ -66,16 +81,6 @@
             this.dSReportesBindingSource.DataSource = this.dS_Reportes;
             this.dSReportesBindingSource.Position = 0;
             // 
-            // prestamosdatabaseDataSet
-            // 
-            this.prestamosdatabaseDataSet.DataSetName = "PrestamosdatabaseDataSet";
-            this.prestamosdatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // spmorasporclienteBindingSource
-            // 
-            this.spmorasporclienteBindingSource.DataMember = "sp_morasporcliente";
-            this.spmorasporclienteBindingSource.DataSource = this.prestamosdatabaseDataSet;
-            // 
             // sp_morasporclienteTableAdapter
             // 
             this.sp_morasporclienteTableAdapter.ClearBeforeFill = true;
@@ -88,6 +93,20 @@
             this.txt_p1.TabIndex = 1;
             this.txt_p1.Visible = false;
             // 
+            // dS_Reporte4
+            // 
+            this.dS_Reporte4.DataSetName = "DS_Reporte4";
+            this.dS_Reporte4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // spmorasporclienteBindingSource1
+            // 
+            this.spmorasporclienteBindingSource1.DataMember = "sp_morasporcliente";
+            this.spmorasporclienteBindingSource1.DataSource = this.dS_Reporte4;
+            // 
+            // sp_morasporclienteTableAdapter1
+            // 
+            this.sp_morasporclienteTableAdapter1.ClearBeforeFill = true;
+            // 
             // FormReporte4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,10 +117,12 @@
             this.Name = "FormReporte4";
             this.Text = "FormReporte4";
             this.Load += new System.EventHandler(this.FormReporte4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prestamosdatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dS_Reportes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSReportesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prestamosdatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_Reporte4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spmorasporclienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,9 +132,12 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource spmorasporclienteBindingSource;
         private PrestamosdatabaseDataSet prestamosdatabaseDataSet;
-        private DS_Reportes1 dS_Reportes;
+        private DS_Reporte1 dS_Reportes;
         private System.Windows.Forms.BindingSource dSReportesBindingSource;
         private PrestamosdatabaseDataSetTableAdapters.sp_morasporclienteTableAdapter sp_morasporclienteTableAdapter;
         public System.Windows.Forms.TextBox txt_p1;
+        private System.Windows.Forms.BindingSource spmorasporclienteBindingSource1;
+        private DS_Reporte4 dS_Reporte4;
+        private DS_Reporte4TableAdapters.sp_morasporclienteTableAdapter sp_morasporclienteTableAdapter1;
     }
 }

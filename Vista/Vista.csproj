@@ -169,7 +169,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <Compile Include="Reportes\DS_Reporte1.cs">
       <DependentUpon>DS_Reporte1.xsd</DependentUpon>
     </Compile>
@@ -183,22 +182,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Reporte2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\DS_Reporte3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DS_Reporte4.cs">
+      <DependentUpon>DS_Reporte4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DS_Reporte4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\DS_Reporte5.Designer.cs">
-
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Reporte5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\DS_Reportes1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Reportes.4xsd</DependentUpon>
     </Compile>
     <Compile Include="Reportes\FormReporte1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\FormReporte1.Designer.cs">
       <DependentUpon>FormReporte1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormReporte2.Designer.cs">
+      <DependentUpon>FormReporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormReporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormReporte3.Designer.cs">
+      <DependentUpon>FormReporte3.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\FormReporte4.cs">
       <SubType>Form</SubType>
@@ -271,15 +289,22 @@
     <EmbeddedResource Include="Reportes\FormReporte1.resx">
       <DependentUpon>FormReporte1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormReporte2.resx">
+      <DependentUpon>FormReporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormReporte3.resx">
+      <DependentUpon>FormReporte3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\FormReporte4.resx">
       <DependentUpon>FormReporte4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormReporte5.resx">
+      <DependentUpon>FormReporte5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
-
     <EmbeddedResource Include="Reportes\Report2.rdlc" />
-
+    <EmbeddedResource Include="Reportes\Report3.rdlc" />
     <EmbeddedResource Include="Reportes\Reporte5.rdlc" />
-
     <None Include="packages.config" />
     <None Include="PrestamosdatabaseDataSet.xsc">
       <DependentUpon>PrestamosdatabaseDataSet.xsd</DependentUpon>
@@ -349,6 +374,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\DS_Reporte3.xsc">
+      <DependentUpon>DS_Reporte3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DS_Reporte3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DS_Reporte3.xss">
+      <DependentUpon>DS_Reporte3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DS_Reporte4.xsc">
+      <DependentUpon>DS_Reporte4.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DS_Reporte4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DS_Reporte4.xss">
+      <DependentUpon>DS_Reporte4.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\DS_Reporte5.xsc">
       <DependentUpon>DS_Reporte5.xsd</DependentUpon>
     </None>
@@ -359,18 +406,6 @@
     </None>
     <None Include="Reportes\DS_Reporte5.xss">
       <DependentUpon>DS_Reporte5.xsd</DependentUpon>
-    </None>
-
-    <None Include="Reportes\DS_Reportes.xsc">
-      <DependentUpon>DS_Reportes.4xsd</DependentUpon>
-    </None>
-    <None Include="Reportes\DS_Reportes.4xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_Reportes1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reportes\DS_Reportes.xss">
-      <DependentUpon>DS_Reportes.4xsd</DependentUpon>
     </None>
     <None Include="Resources\Minimize_Icon.png" />
   </ItemGroup>

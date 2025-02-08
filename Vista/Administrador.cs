@@ -239,5 +239,11 @@ namespace Vista
             Reportes.FormReporte4 oRpt1 = new Reportes.FormReporte4();
             oRpt1.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Reportes.FormReporte5 oRpt2 = new Reportes.FormReporte5();
+            oRpt2.Show();
+        }
     }
 }

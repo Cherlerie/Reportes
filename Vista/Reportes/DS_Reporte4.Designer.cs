@@ -20,9 +20,9 @@ namespace Vista.Reportes {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reportes")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reporte4")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Reportes1 : global::System.Data.DataSet {
+    public partial class DS_Reporte4 : global::System.Data.DataSet {
         
         private sp_morasporclienteDataTable tablesp_morasporcliente;
         
@@ -30,7 +30,7 @@ namespace Vista.Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Reportes1() {
+        public DS_Reporte4() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Vista.Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Reportes1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Reporte4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Reportes1 cln = ((DS_Reportes1)(base.Clone()));
+            DS_Reporte4 cln = ((DS_Reporte4)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Reportes";
+            this.DataSetName = "DS_Reporte4";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Reportes.xsd";
+            this.Namespace = "http://tempuri.org/DS_Reporte4.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablesp_morasporcliente = new sp_morasporclienteDataTable();
@@ -225,7 +225,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Reportes1 ds = new DS_Reportes1();
+            DS_Reporte4 ds = new DS_Reporte4();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -508,7 +508,7 @@ namespace Vista.Reportes {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Reportes1 ds = new DS_Reportes1();
+                DS_Reporte4 ds = new DS_Reporte4();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -661,7 +661,7 @@ namespace Vista.Reportes {
         }
     }
 }
-namespace Vista.Reportes.DS_ReportesTableAdapters {
+namespace Vista.Reportes.DS_Reporte4TableAdapters {
     
     
     /// <summary>
@@ -815,7 +815,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Reportes1.sp_morasporclienteDataTable dataTable, string Criterio) {
+        public virtual int Fill(DS_Reporte4.sp_morasporclienteDataTable dataTable, string Criterio) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Criterio == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -834,7 +834,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Reportes1.sp_morasporclienteDataTable GetData(string Criterio) {
+        public virtual DS_Reporte4.sp_morasporclienteDataTable GetData(string Criterio) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Criterio == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -842,7 +842,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Criterio));
             }
-            DS_Reportes1.sp_morasporclienteDataTable dataTable = new DS_Reportes1.sp_morasporclienteDataTable();
+            DS_Reporte4.sp_morasporclienteDataTable dataTable = new DS_Reporte4.sp_morasporclienteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -916,7 +916,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Reportes1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Reporte4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -926,7 +926,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Reportes1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Reporte4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -936,7 +936,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Reportes1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Reporte4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -970,7 +970,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Reportes1 dataSet) {
+        public virtual int UpdateAll(DS_Reporte4 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

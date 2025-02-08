@@ -20,17 +20,17 @@ namespace Vista.Reportes {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reporte5")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reporte3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Reporte5 : global::System.Data.DataSet {
+    public partial class DS_Reporte3 : global::System.Data.DataSet {
         
-        private sp_ListarClientesMorososDataTable tablesp_ListarClientesMorosos;
+        private sp_ReporteTotalPrestamosDataTable tablesp_ReporteTotalPrestamos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Reporte5() {
+        public DS_Reporte3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Vista.Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Reporte5(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Reporte3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Vista.Reportes {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["sp_ListarClientesMorosos"] != null)) {
-                    base.Tables.Add(new sp_ListarClientesMorososDataTable(ds.Tables["sp_ListarClientesMorosos"]));
+                if ((ds.Tables["sp_ReporteTotalPrestamos"] != null)) {
+                    base.Tables.Add(new sp_ReporteTotalPrestamosDataTable(ds.Tables["sp_ReporteTotalPrestamos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Vista.Reportes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public sp_ListarClientesMorososDataTable sp_ListarClientesMorosos {
+        public sp_ReporteTotalPrestamosDataTable sp_ReporteTotalPrestamos {
             get {
-                return this.tablesp_ListarClientesMorosos;
+                return this.tablesp_ReporteTotalPrestamos;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Reporte5 cln = ((DS_Reporte5)(base.Clone()));
+            DS_Reporte3 cln = ((DS_Reporte3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Vista.Reportes {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["sp_ListarClientesMorosos"] != null)) {
-                    base.Tables.Add(new sp_ListarClientesMorososDataTable(ds.Tables["sp_ListarClientesMorosos"]));
+                if ((ds.Tables["sp_ReporteTotalPrestamos"] != null)) {
+                    base.Tables.Add(new sp_ReporteTotalPrestamosDataTable(ds.Tables["sp_ReporteTotalPrestamos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablesp_ListarClientesMorosos = ((sp_ListarClientesMorososDataTable)(base.Tables["sp_ListarClientesMorosos"]));
+            this.tablesp_ReporteTotalPrestamos = ((sp_ReporteTotalPrestamosDataTable)(base.Tables["sp_ReporteTotalPrestamos"]));
             if ((initTable == true)) {
-                if ((this.tablesp_ListarClientesMorosos != null)) {
-                    this.tablesp_ListarClientesMorosos.InitVars();
+                if ((this.tablesp_ReporteTotalPrestamos != null)) {
+                    this.tablesp_ReporteTotalPrestamos.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Reporte5";
+            this.DataSetName = "DS_Reporte3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Reporte5.xsd";
+            this.Namespace = "http://tempuri.org/DS_Reporte3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablesp_ListarClientesMorosos = new sp_ListarClientesMorososDataTable();
-            base.Tables.Add(this.tablesp_ListarClientesMorosos);
+            this.tablesp_ReporteTotalPrestamos = new sp_ReporteTotalPrestamosDataTable();
+            base.Tables.Add(this.tablesp_ReporteTotalPrestamos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializesp_ListarClientesMorosos() {
+        private bool ShouldSerializesp_ReporteTotalPrestamos() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Reporte5 ds = new DS_Reporte5();
+            DS_Reporte3 ds = new DS_Reporte3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,23 @@ namespace Vista.Reportes {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void sp_ListarClientesMorososRowChangeEventHandler(object sender, sp_ListarClientesMorososRowChangeEvent e);
+        public delegate void sp_ReporteTotalPrestamosRowChangeEventHandler(object sender, sp_ReporteTotalPrestamosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class sp_ListarClientesMorososDataTable : global::System.Data.TypedTableBase<sp_ListarClientesMorososRow> {
+        public partial class sp_ReporteTotalPrestamosDataTable : global::System.Data.TypedTableBase<sp_ReporteTotalPrestamosRow> {
             
-            private global::System.Data.DataColumn columnMoraID;
+            private global::System.Data.DataColumn columnTotalDineroPrestado;
             
-            private global::System.Data.DataColumn columnClienteID;
-            
-            private global::System.Data.DataColumn columnCantidadMoras;
+            private global::System.Data.DataColumn columnTotalGanancia;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososDataTable() {
-                this.TableName = "sp_ListarClientesMorosos";
+            public sp_ReporteTotalPrestamosDataTable() {
+                this.TableName = "sp_ReporteTotalPrestamos";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +294,7 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sp_ListarClientesMorososDataTable(global::System.Data.DataTable table) {
+            internal sp_ReporteTotalPrestamosDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,32 +311,24 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected sp_ListarClientesMorososDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected sp_ReporteTotalPrestamosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MoraIDColumn {
+            public global::System.Data.DataColumn TotalDineroPrestadoColumn {
                 get {
-                    return this.columnMoraID;
+                    return this.columnTotalDineroPrestado;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ClienteIDColumn {
+            public global::System.Data.DataColumn TotalGananciaColumn {
                 get {
-                    return this.columnClienteID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CantidadMorasColumn {
-                get {
-                    return this.columnCantidadMoras;
+                    return this.columnTotalGanancia;
                 }
             }
             
@@ -353,54 +343,46 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRow this[int index] {
+            public sp_ReporteTotalPrestamosRow this[int index] {
                 get {
-                    return ((sp_ListarClientesMorososRow)(this.Rows[index]));
+                    return ((sp_ReporteTotalPrestamosRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_ListarClientesMorososRowChangeEventHandler sp_ListarClientesMorososRowChanging;
+            public event sp_ReporteTotalPrestamosRowChangeEventHandler sp_ReporteTotalPrestamosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_ListarClientesMorososRowChangeEventHandler sp_ListarClientesMorososRowChanged;
+            public event sp_ReporteTotalPrestamosRowChangeEventHandler sp_ReporteTotalPrestamosRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_ListarClientesMorososRowChangeEventHandler sp_ListarClientesMorososRowDeleting;
+            public event sp_ReporteTotalPrestamosRowChangeEventHandler sp_ReporteTotalPrestamosRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_ListarClientesMorososRowChangeEventHandler sp_ListarClientesMorososRowDeleted;
+            public event sp_ReporteTotalPrestamosRowChangeEventHandler sp_ReporteTotalPrestamosRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Addsp_ListarClientesMorososRow(sp_ListarClientesMorososRow row) {
+            public void Addsp_ReporteTotalPrestamosRow(sp_ReporteTotalPrestamosRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRow Addsp_ListarClientesMorososRow(int ClienteID, int CantidadMoras) {
-                sp_ListarClientesMorososRow rowsp_ListarClientesMorososRow = ((sp_ListarClientesMorososRow)(this.NewRow()));
+            public sp_ReporteTotalPrestamosRow Addsp_ReporteTotalPrestamosRow(decimal TotalDineroPrestado, decimal TotalGanancia) {
+                sp_ReporteTotalPrestamosRow rowsp_ReporteTotalPrestamosRow = ((sp_ReporteTotalPrestamosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        ClienteID,
-                        CantidadMoras};
-                rowsp_ListarClientesMorososRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowsp_ListarClientesMorososRow);
-                return rowsp_ListarClientesMorososRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRow FindByMoraID(int MoraID) {
-                return ((sp_ListarClientesMorososRow)(this.Rows.Find(new object[] {
-                            MoraID})));
+                        TotalDineroPrestado,
+                        TotalGanancia};
+                rowsp_ReporteTotalPrestamosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowsp_ReporteTotalPrestamosRow);
+                return rowsp_ReporteTotalPrestamosRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                sp_ListarClientesMorososDataTable cln = ((sp_ListarClientesMorososDataTable)(base.Clone()));
+                sp_ReporteTotalPrestamosDataTable cln = ((sp_ReporteTotalPrestamosDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,62 +390,51 @@ namespace Vista.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new sp_ListarClientesMorososDataTable();
+                return new sp_ReporteTotalPrestamosDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnMoraID = base.Columns["MoraID"];
-                this.columnClienteID = base.Columns["ClienteID"];
-                this.columnCantidadMoras = base.Columns["CantidadMoras"];
+                this.columnTotalDineroPrestado = base.Columns["TotalDineroPrestado"];
+                this.columnTotalGanancia = base.Columns["TotalGanancia"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnMoraID = new global::System.Data.DataColumn("MoraID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMoraID);
-                this.columnClienteID = new global::System.Data.DataColumn("ClienteID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnClienteID);
-                this.columnCantidadMoras = new global::System.Data.DataColumn("CantidadMoras", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCantidadMoras);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnMoraID}, true));
-                this.columnMoraID.AutoIncrement = true;
-                this.columnMoraID.AutoIncrementSeed = -1;
-                this.columnMoraID.AutoIncrementStep = -1;
-                this.columnMoraID.AllowDBNull = false;
-                this.columnMoraID.ReadOnly = true;
-                this.columnMoraID.Unique = true;
-                this.columnClienteID.AllowDBNull = false;
-                this.columnCantidadMoras.AllowDBNull = false;
+                this.columnTotalDineroPrestado = new global::System.Data.DataColumn("TotalDineroPrestado", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalDineroPrestado);
+                this.columnTotalGanancia = new global::System.Data.DataColumn("TotalGanancia", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalGanancia);
+                this.columnTotalDineroPrestado.ReadOnly = true;
+                this.columnTotalGanancia.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRow Newsp_ListarClientesMorososRow() {
-                return ((sp_ListarClientesMorososRow)(this.NewRow()));
+            public sp_ReporteTotalPrestamosRow Newsp_ReporteTotalPrestamosRow() {
+                return ((sp_ReporteTotalPrestamosRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new sp_ListarClientesMorososRow(builder);
+                return new sp_ReporteTotalPrestamosRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(sp_ListarClientesMorososRow);
+                return typeof(sp_ReporteTotalPrestamosRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.sp_ListarClientesMorososRowChanged != null)) {
-                    this.sp_ListarClientesMorososRowChanged(this, new sp_ListarClientesMorososRowChangeEvent(((sp_ListarClientesMorososRow)(e.Row)), e.Action));
+                if ((this.sp_ReporteTotalPrestamosRowChanged != null)) {
+                    this.sp_ReporteTotalPrestamosRowChanged(this, new sp_ReporteTotalPrestamosRowChangeEvent(((sp_ReporteTotalPrestamosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,8 +442,8 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.sp_ListarClientesMorososRowChanging != null)) {
-                    this.sp_ListarClientesMorososRowChanging(this, new sp_ListarClientesMorososRowChangeEvent(((sp_ListarClientesMorososRow)(e.Row)), e.Action));
+                if ((this.sp_ReporteTotalPrestamosRowChanging != null)) {
+                    this.sp_ReporteTotalPrestamosRowChanging(this, new sp_ReporteTotalPrestamosRowChangeEvent(((sp_ReporteTotalPrestamosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -480,8 +451,8 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.sp_ListarClientesMorososRowDeleted != null)) {
-                    this.sp_ListarClientesMorososRowDeleted(this, new sp_ListarClientesMorososRowChangeEvent(((sp_ListarClientesMorososRow)(e.Row)), e.Action));
+                if ((this.sp_ReporteTotalPrestamosRowDeleted != null)) {
+                    this.sp_ReporteTotalPrestamosRowDeleted(this, new sp_ReporteTotalPrestamosRowChangeEvent(((sp_ReporteTotalPrestamosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -489,14 +460,14 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.sp_ListarClientesMorososRowDeleting != null)) {
-                    this.sp_ListarClientesMorososRowDeleting(this, new sp_ListarClientesMorososRowChangeEvent(((sp_ListarClientesMorososRow)(e.Row)), e.Action));
+                if ((this.sp_ReporteTotalPrestamosRowDeleting != null)) {
+                    this.sp_ReporteTotalPrestamosRowDeleting(this, new sp_ReporteTotalPrestamosRowChangeEvent(((sp_ReporteTotalPrestamosRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Removesp_ListarClientesMorososRow(sp_ListarClientesMorososRow row) {
+            public void Removesp_ReporteTotalPrestamosRow(sp_ReporteTotalPrestamosRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -505,7 +476,7 @@ namespace Vista.Reportes {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Reporte5 ds = new DS_Reporte5();
+                DS_Reporte3 ds = new DS_Reporte3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -523,7 +494,7 @@ namespace Vista.Reportes {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "sp_ListarClientesMorososDataTable";
+                attribute2.FixedValue = "sp_ReporteTotalPrestamosDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -567,48 +538,73 @@ namespace Vista.Reportes {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class sp_ListarClientesMorososRow : global::System.Data.DataRow {
+        public partial class sp_ReporteTotalPrestamosRow : global::System.Data.DataRow {
             
-            private sp_ListarClientesMorososDataTable tablesp_ListarClientesMorosos;
+            private sp_ReporteTotalPrestamosDataTable tablesp_ReporteTotalPrestamos;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sp_ListarClientesMorososRow(global::System.Data.DataRowBuilder rb) : 
+            internal sp_ReporteTotalPrestamosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablesp_ListarClientesMorosos = ((sp_ListarClientesMorososDataTable)(this.Table));
+                this.tablesp_ReporteTotalPrestamos = ((sp_ReporteTotalPrestamosDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int MoraID {
+            public decimal TotalDineroPrestado {
                 get {
-                    return ((int)(this[this.tablesp_ListarClientesMorosos.MoraIDColumn]));
+                    try {
+                        return ((decimal)(this[this.tablesp_ReporteTotalPrestamos.TotalDineroPrestadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TotalDineroPrestado\' de la tabla \'sp_ReporteTotalPrestamo" +
+                                "s\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablesp_ListarClientesMorosos.MoraIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ClienteID {
-                get {
-                    return ((int)(this[this.tablesp_ListarClientesMorosos.ClienteIDColumn]));
-                }
-                set {
-                    this[this.tablesp_ListarClientesMorosos.ClienteIDColumn] = value;
+                    this[this.tablesp_ReporteTotalPrestamos.TotalDineroPrestadoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int CantidadMoras {
+            public decimal TotalGanancia {
                 get {
-                    return ((int)(this[this.tablesp_ListarClientesMorosos.CantidadMorasColumn]));
+                    try {
+                        return ((decimal)(this[this.tablesp_ReporteTotalPrestamos.TotalGananciaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TotalGanancia\' de la tabla \'sp_ReporteTotalPrestamos\' es " +
+                                "DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablesp_ListarClientesMorosos.CantidadMorasColumn] = value;
+                    this[this.tablesp_ReporteTotalPrestamos.TotalGananciaColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalDineroPrestadoNull() {
+                return this.IsNull(this.tablesp_ReporteTotalPrestamos.TotalDineroPrestadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalDineroPrestadoNull() {
+                this[this.tablesp_ReporteTotalPrestamos.TotalDineroPrestadoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalGananciaNull() {
+                return this.IsNull(this.tablesp_ReporteTotalPrestamos.TotalGananciaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalGananciaNull() {
+                this[this.tablesp_ReporteTotalPrestamos.TotalGananciaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -616,22 +612,22 @@ namespace Vista.Reportes {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class sp_ListarClientesMorososRowChangeEvent : global::System.EventArgs {
+        public class sp_ReporteTotalPrestamosRowChangeEvent : global::System.EventArgs {
             
-            private sp_ListarClientesMorososRow eventRow;
+            private sp_ReporteTotalPrestamosRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRowChangeEvent(sp_ListarClientesMorososRow row, global::System.Data.DataRowAction action) {
+            public sp_ReporteTotalPrestamosRowChangeEvent(sp_ReporteTotalPrestamosRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_ListarClientesMorososRow Row {
+            public sp_ReporteTotalPrestamosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -647,7 +643,7 @@ namespace Vista.Reportes {
         }
     }
 }
-namespace Vista.Reportes.DS_Reporte5TableAdapters {
+namespace Vista.Reportes.DS_Reporte3TableAdapters {
     
     
     /// <summary>
@@ -659,7 +655,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class sp_ListarClientesMorososTableAdapter : global::System.ComponentModel.Component {
+    public partial class sp_ReporteTotalPrestamosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -673,7 +669,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public sp_ListarClientesMorososTableAdapter() {
+        public sp_ReporteTotalPrestamosTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -770,10 +766,9 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "sp_ListarClientesMorosos";
-            tableMapping.ColumnMappings.Add("MoraID", "MoraID");
-            tableMapping.ColumnMappings.Add("ClienteID", "ClienteID");
-            tableMapping.ColumnMappings.Add("CantidadMoras", "CantidadMoras");
+            tableMapping.DataSetTable = "sp_ReporteTotalPrestamos";
+            tableMapping.ColumnMappings.Add("TotalDineroPrestado", "TotalDineroPrestado");
+            tableMapping.ColumnMappings.Add("TotalGanancia", "TotalGanancia");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -790,7 +785,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.sp_ListarClientesMorosos";
+            this._commandCollection[0].CommandText = "dbo.sp_ReporteTotalPrestamos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -799,7 +794,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Reporte5.sp_ListarClientesMorososDataTable dataTable) {
+        public virtual int Fill(DS_Reporte3.sp_ReporteTotalPrestamosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -812,9 +807,9 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Reporte5.sp_ListarClientesMorososDataTable GetData() {
+        public virtual DS_Reporte3.sp_ReporteTotalPrestamosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_Reporte5.sp_ListarClientesMorososDataTable dataTable = new DS_Reporte5.sp_ListarClientesMorososDataTable();
+            DS_Reporte3.sp_ReporteTotalPrestamosDataTable dataTable = new DS_Reporte3.sp_ReporteTotalPrestamosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -888,7 +883,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Reporte5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Reporte3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -898,7 +893,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Reporte5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Reporte3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -908,7 +903,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Reporte5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Reporte3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -942,7 +937,7 @@ namespace Vista.Reportes.DS_Reporte5TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Reporte5 dataSet) {
+        public virtual int UpdateAll(DS_Reporte3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -6,21 +6,15 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.60583cm</Width>
+              <Width>3.97814cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.28317cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>3.008cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.97814cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.489cm</Height>
+              <Height>1.34718cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -31,9 +25,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cliente ID</Value>
+                              <Value>Total Dinero Prestado</Value>
                               <Style>
-                                <FontSize>14pt</FontSize>
+                                <FontFamily>myanmar Text</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>DarkBlue</Color>
                               </Style>
@@ -48,6 +43,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Yellow</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -65,9 +61,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Nombre</Value>
+                              <Value>Total Ganancia</Value>
                               <Style>
-                                <FontSize>14pt</FontSize>
+                                <FontFamily>myanmar Text</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>DarkBlue</Color>
                               </Style>
@@ -82,74 +79,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox5">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Apellido</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>DarkBlue</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox5</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox7">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Cantidad Moras</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>DarkBlue</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
+                        <BackgroundColor>Yellow</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -161,27 +91,25 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.89633cm</Height>
+              <Height>1.34718cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ClienteID">
+                    <Textbox Name="TotalDineroPrestado">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ClienteID.Value</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                              </Style>
+                              <Value>=Fields!TotalDineroPrestado.Value</Value>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ClienteID</rd:DefaultName>
+                      <rd:DefaultName>TotalDineroPrestado</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -197,87 +125,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Nombre">
+                    <Textbox Name="TotalGanancia">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Nombre.Value</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                              </Style>
+                              <Value>=Fields!TotalGanancia.Value</Value>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Nombre</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Apellido">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!Apellido.Value</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Apellido</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="CantidadMoras">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!CantidadMoras.Value</Value>
-                              <Style>
-                                <FontSize>14pt</FontSize>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>CantidadMoras</rd:DefaultName>
+                      <rd:DefaultName>TotalGanancia</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -299,8 +161,6 @@
           <TablixMembers>
             <TablixMember />
             <TablixMember />
-            <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -313,11 +173,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Top>0.7747cm</Top>
-        <Left>3.03254cm</Left>
-        <Height>2.38533cm</Height>
-        <Width>11.397cm</Width>
+        <DataSetName>DataSet134</DataSetName>
+        <Top>1.0795cm</Top>
+        <Left>5.0915cm</Left>
+        <Height>2.69437cm</Height>
+        <Width>7.95628cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -325,13 +185,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.13334in</Height>
+    <Height>3.15in</Height>
     <Style />
   </Body>
-  <Width>7.09572in</Width>
+  <Width>6.88239in</Width>
   <Page>
     <PageHeader>
-      <Height>4.5447cm</Height>
+      <Height>3.59833cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -339,8 +199,7 @@
           <Source>Embedded</Source>
           <Value>logosdegrupovimencaremesas</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.62653cm</Top>
-          <Left>0.54187cm</Left>
+          <Top>0.19192cm</Top>
           <Height>2.135cm</Height>
           <Width>8.683cm</Width>
           <Style>
@@ -358,16 +217,22 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>REPORTE MORAS </Value>
+                      <Value>REPORTE GANANCIAS PRESTAMO</Value>
                       <Style>
                         <FontFamily>myanmar Text</FontFamily>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
                     <TextRun>
-                      <Value>DE CLIENTE</Value>
+                      <Value />
                       <Style>
+                        <FontFamily>myanmar Text</FontFamily>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -378,9 +243,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
               <Top>1.0795cm</Top>
-              <Left>7.78695cm</Left>
+              <Left>3.90639cm</Left>
               <Height>0.70583cm</Height>
-              <Width>7.79167cm</Width>
+              <Width>8.82884cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -407,7 +272,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
               <Top>2.26483cm</Top>
-              <Left>9.29217cm</Left>
+              <Left>6.62517cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
@@ -423,10 +288,10 @@
             </Textbox>
           </ReportItems>
           <KeepTogether>true</KeepTogether>
-          <Top>0.9762cm</Top>
-          <Left>1.61431cm</Left>
+          <Top>0.54159cm</Top>
+          <Left>3.73944cm</Left>
           <Height>2.86483cm</Height>
-          <Width>16.40883cm</Width>
+          <Width>12.91162cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -442,40 +307,9 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.62353cm</Height>
+      <Height>0.02646cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Textbox Name="Textbox9">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals.PageNumber &amp; " de " &amp; Globals.TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>0.7747cm</Top>
-          <Left>3.33587cm</Left>
-          <Height>0.6cm</Height>
-          <Width>11.09367cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
@@ -493,41 +327,37 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DS_Reportes">
+    <DataSource Name="DS_Reporte3">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>d454cf65-d1bc-4adf-b6e4-7644aad1c702</rd:DataSourceID>
+      <rd:DataSourceID>cbf3be0b-4589-4e1a-88a3-315b923170c9</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataSet134">
       <Query>
-        <DataSourceName>DS_Reportes</DataSourceName>
+        <DataSourceName>DS_Reporte3</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="MoraID">
-          <DataField>MoraID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="TotalDineroPrestado">
+          <DataField>TotalDineroPrestado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ClienteID">
-          <DataField>ClienteID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CantidadMoras">
-          <DataField>CantidadMoras</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="TotalGanancia">
+          <DataField>TotalGanancia</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DS_Reporte5</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\miaun\Source\Repos\Reportes\Vista\Reportes\DS_Reporte5.xsd</rd:SchemaPath>
-        <rd:TableName>sp_ListarClientesMorosos</rd:TableName>
+        <rd:DataSetName>DS_Reporte3</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\miaun\Source\Repos\Reportes\Vista\Reportes\DS_Reporte3.xsd</rd:SchemaPath>
+        <rd:TableName>sp_ReporteTotalPrestamos</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>sp_ListarClientesMorososTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>sp_ReporteTotalPrestamosTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -719,5 +549,5 @@ NkdkZF98Rz7iC86qr8qqfhyFrTW2A68hvIiPRMGw7HcSjOohk4iOMUEaOBfOMy80+JKvxVfcYgbT1frv
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>b6ebba18-10af-4fc2-ad2e-3aa47550daab</rd:ReportID>
+  <rd:ReportID>3a8cba69-0d51-4d88-b492-e991dbb727c5</rd:ReportID>
 </Report>

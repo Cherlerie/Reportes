@@ -16,5 +16,13 @@ namespace Vista.Reportes
         {
             InitializeComponent();
         }
+
+        private void FormReporte5_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dS_Reporte5.sp_ListarClientesMorosos' Puede moverla o quitarla según sea necesario.
+            this.sp_ListarClientesMorososTableAdapter.Fill(this.dS_Reporte5.sp_ListarClientesMorosos);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
