@@ -11,18 +11,15 @@ namespace Pjr_Capa_Negocio
 
         public bool InsertarPrestamo(CE_Prestamo prestamo, decimal sueldo, string garantia)
         {
-            // no dar prestamos mayol a 4 veces el sueldo
             if (prestamo.MontoPrestamo > sueldo * 4)
             {
                 throw new Exception("El monto del préstamo no puede ser mayor a 4 veces el sueldo.");
             }
-            //  hay q tener garantia
             if (string.IsNullOrEmpty(garantia))
             {
                 throw new Exception("Debe proporcionar una garantía para el préstamo.");
             }
 
-            // porcientos
             decimal tasaAnual = 0;
             if (prestamo.TiempoMeses >= 1 && prestamo.TiempoMeses <= 3)
                 tasaAnual = 0.10m;
@@ -33,7 +30,6 @@ namespace Pjr_Capa_Negocio
             else if (prestamo.TiempoMeses > 12)
                 tasaAnual = 0.05m;
 
-            // calculo de interes generado
 
             decimal tiempoAnios = prestamo.TiempoMeses / 12.0m;
             prestamo.InteresGenerado = prestamo.MontoPrestamo * tasaAnual * tiempoAnios;

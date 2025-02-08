@@ -2,6 +2,9 @@
 using System.Data;
 using System.Windows.Forms;
 using Pjr_Capa_Negocio;
+using Microsoft.Reporting.WinForms;
+using Vista.Reportes;
+
 
 namespace Vista
 {
@@ -140,6 +143,27 @@ namespace Vista
                 MessageBox.Show("Error al seleccionar cliente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int prestamoID = 0;
+                if (comboBoxPrestamos.SelectedItem is DataRowView row)
+                    prestamoID = Convert.ToInt32(row["PrestamoID"]);
+                else if (comboBoxPrestamos.SelectedValue != null)
+                    prestamoID = Convert.ToInt32(comboBoxPrestamos.SelectedValue);
+
+                FormReporte1 rptForm = new FormReporte1();
+                rptForm.CargarReporte(prestamoID);
+                rptForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al generar el reporte: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+    
 }
 

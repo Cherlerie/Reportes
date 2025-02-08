@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class Pago
+    partial class PagoCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -33,12 +33,15 @@
             this.dgvHistorialPagos = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtpago = new System.Windows.Forms.TextBox();
+            this.txtMontoPago = new System.Windows.Forms.TextBox();
             this.btnRegistrarPago = new System.Windows.Forms.Button();
-            this.comboBoxIDprestamo = new System.Windows.Forms.ComboBox();
+            this.comboBoxPrestamos = new System.Windows.Forms.ComboBox();
+            this.lblFechaActual = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialPagos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -46,7 +49,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, -41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(184, 796);
             this.panel1.TabIndex = 0;
@@ -55,19 +58,18 @@
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.cancel_circle_icon_149965;
             this.pictureBox1.Location = new System.Drawing.Point(40, 62);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(91, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dgvHistorialPagos
             // 
             this.dgvHistorialPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHistorialPagos.Location = new System.Drawing.Point(229, 303);
-            this.dgvHistorialPagos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHistorialPagos.Location = new System.Drawing.Point(238, 288);
+            this.dgvHistorialPagos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHistorialPagos.Name = "dgvHistorialPagos";
             this.dgvHistorialPagos.RowHeadersWidth = 51;
             this.dgvHistorialPagos.Size = new System.Drawing.Size(803, 398);
@@ -77,7 +79,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(741, 79);
+            this.label8.Location = new System.Drawing.Point(739, 56);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(130, 36);
@@ -96,13 +98,13 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Id Prestamo";
             // 
-            // txtpago
+            // txtMontoPago
             // 
-            this.txtpago.Location = new System.Drawing.Point(685, 128);
-            this.txtpago.Margin = new System.Windows.Forms.Padding(4);
-            this.txtpago.Name = "txtpago";
-            this.txtpago.Size = new System.Drawing.Size(236, 22);
-            this.txtpago.TabIndex = 17;
+            this.txtMontoPago.Location = new System.Drawing.Point(685, 128);
+            this.txtMontoPago.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMontoPago.Name = "txtMontoPago";
+            this.txtMontoPago.Size = new System.Drawing.Size(236, 22);
+            this.txtMontoPago.TabIndex = 17;
             // 
             // btnRegistrarPago
             // 
@@ -115,36 +117,59 @@
             this.btnRegistrarPago.UseVisualStyleBackColor = true;
             this.btnRegistrarPago.Click += new System.EventHandler(this.btnRegistrarPago_Click);
             // 
-            // comboBoxIDprestamo
+            // comboBoxPrestamos
             // 
-            this.comboBoxIDprestamo.FormattingEnabled = true;
-            this.comboBoxIDprestamo.Location = new System.Drawing.Point(406, 136);
-            this.comboBoxIDprestamo.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxIDprestamo.Name = "comboBoxIDprestamo";
-            this.comboBoxIDprestamo.Size = new System.Drawing.Size(143, 24);
-            this.comboBoxIDprestamo.TabIndex = 19;
-            this.comboBoxIDprestamo.SelectedIndexChanged += new System.EventHandler(this.comboBoxIDprestamo_SelectedIndexChanged);
+            this.comboBoxPrestamos.FormattingEnabled = true;
+            this.comboBoxPrestamos.Location = new System.Drawing.Point(406, 136);
+            this.comboBoxPrestamos.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxPrestamos.Name = "comboBoxPrestamos";
+            this.comboBoxPrestamos.Size = new System.Drawing.Size(143, 24);
+            this.comboBoxPrestamos.TabIndex = 19;
+            this.comboBoxPrestamos.SelectedIndexChanged += new System.EventHandler(this.comboBoxPrestamos_SelectedIndexChanged);
             // 
-            // Pago
+            // lblFechaActual
+            // 
+            this.lblFechaActual.AutoSize = true;
+            this.lblFechaActual.Location = new System.Drawing.Point(226, 44);
+            this.lblFechaActual.Name = "lblFechaActual";
+            this.lblFechaActual.Size = new System.Drawing.Size(28, 16);
+            this.lblFechaActual.TabIndex = 21;
+            this.lblFechaActual.Text = "000";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Vista.Properties.Resources.images2;
+            this.pictureBox2.Location = new System.Drawing.Point(191, 665);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 90);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // PagoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 741);
             this.Controls.Add(this.dgvHistorialPagos);
-            this.Controls.Add(this.comboBoxIDprestamo);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lblFechaActual);
+            this.Controls.Add(this.comboBoxPrestamos);
             this.Controls.Add(this.btnRegistrarPago);
-            this.Controls.Add(this.txtpago);
+            this.Controls.Add(this.txtMontoPago);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Pago";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "PagoCliente";
             this.Text = "Pago";
-            this.Load += new System.EventHandler(this.Pago_Load);
+            this.Load += new System.EventHandler(this.PagoCliente_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialPagos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,8 +182,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtpago;
+        private System.Windows.Forms.TextBox txtMontoPago;
         private System.Windows.Forms.Button btnRegistrarPago;
-        private System.Windows.Forms.ComboBox comboBoxIDprestamo;
+        private System.Windows.Forms.ComboBox comboBoxPrestamos;
+        private System.Windows.Forms.Label lblFechaActual;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

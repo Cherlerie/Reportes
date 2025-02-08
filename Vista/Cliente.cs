@@ -151,19 +151,19 @@ namespace Vista
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Pago PagoForm = new Pago();
-            PagoForm.Show();
+            PagoCliente PagoClienteForm = new PagoCliente(ClienteID);
+            PagoClienteForm.Show();
 
             Administrador.Controls.Clear();
 
-            PagoForm.TopLevel = false;
+            PagoClienteForm.TopLevel = false;
 
-            PagoForm.Dock = DockStyle.Fill;
+            PagoClienteForm.Dock = DockStyle.Fill;
 
-            Administrador.Controls.Add(PagoForm);
+            Administrador.Controls.Add(PagoClienteForm);
 
 
-            PagoForm.Show();
+            PagoClienteForm.Show();
 
         }
 

@@ -20,17 +20,17 @@ namespace Vista.Reportes {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reportes")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Reporte1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Reportes : global::System.Data.DataSet {
+    public partial class DS_Reporte1 : global::System.Data.DataSet {
         
-        private sp_morasporclienteDataTable tablesp_morasporcliente;
+        private AmortizacionDataTable tableAmortizacion;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DS_Reportes() {
+        public DS_Reporte1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Vista.Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DS_Reportes(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Reporte1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Vista.Reportes {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["sp_morasporcliente"] != null)) {
-                    base.Tables.Add(new sp_morasporclienteDataTable(ds.Tables["sp_morasporcliente"]));
+                if ((ds.Tables["Amortizacion"] != null)) {
+                    base.Tables.Add(new AmortizacionDataTable(ds.Tables["Amortizacion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Vista.Reportes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public sp_morasporclienteDataTable sp_morasporcliente {
+        public AmortizacionDataTable Amortizacion {
             get {
-                return this.tablesp_morasporcliente;
+                return this.tableAmortizacion;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Reportes cln = ((DS_Reportes)(base.Clone()));
+            DS_Reporte1 cln = ((DS_Reporte1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Vista.Reportes {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["sp_morasporcliente"] != null)) {
-                    base.Tables.Add(new sp_morasporclienteDataTable(ds.Tables["sp_morasporcliente"]));
+                if ((ds.Tables["Amortizacion"] != null)) {
+                    base.Tables.Add(new AmortizacionDataTable(ds.Tables["Amortizacion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablesp_morasporcliente = ((sp_morasporclienteDataTable)(base.Tables["sp_morasporcliente"]));
+            this.tableAmortizacion = ((AmortizacionDataTable)(base.Tables["Amortizacion"]));
             if ((initTable == true)) {
-                if ((this.tablesp_morasporcliente != null)) {
-                    this.tablesp_morasporcliente.InitVars();
+                if ((this.tableAmortizacion != null)) {
+                    this.tableAmortizacion.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Reportes";
+            this.DataSetName = "DS_Reporte1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Reportes.xsd";
+            this.Namespace = "http://tempuri.org/DS_Reporte1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablesp_morasporcliente = new sp_morasporclienteDataTable();
-            base.Tables.Add(this.tablesp_morasporcliente);
+            this.tableAmortizacion = new AmortizacionDataTable();
+            base.Tables.Add(this.tableAmortizacion);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializesp_morasporcliente() {
+        private bool ShouldSerializeAmortizacion() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Vista.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Reportes ds = new DS_Reportes();
+            DS_Reporte1 ds = new DS_Reporte1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,27 +270,35 @@ namespace Vista.Reportes {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void sp_morasporclienteRowChangeEventHandler(object sender, sp_morasporclienteRowChangeEvent e);
+        public delegate void AmortizacionRowChangeEventHandler(object sender, AmortizacionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class sp_morasporclienteDataTable : global::System.Data.TypedTableBase<sp_morasporclienteRow> {
+        public partial class AmortizacionDataTable : global::System.Data.TypedTableBase<AmortizacionRow> {
             
-            private global::System.Data.DataColumn columnClienteID;
+            private global::System.Data.DataColumn columnAmortizacionID;
             
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnPrestamoID;
             
-            private global::System.Data.DataColumn columnApellido;
+            private global::System.Data.DataColumn columnNumeroCuota;
             
-            private global::System.Data.DataColumn columnCantidadMoras;
+            private global::System.Data.DataColumn columnCuota;
+            
+            private global::System.Data.DataColumn columnInteres;
+            
+            private global::System.Data.DataColumn columnAmortizacionCapital;
+            
+            private global::System.Data.DataColumn columnSaldoPendiente;
+            
+            private global::System.Data.DataColumn columnFechaCuota;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteDataTable() {
-                this.TableName = "sp_morasporcliente";
+            public AmortizacionDataTable() {
+                this.TableName = "Amortizacion";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +306,7 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sp_morasporclienteDataTable(global::System.Data.DataTable table) {
+            internal AmortizacionDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,40 +323,72 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected sp_morasporclienteDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AmortizacionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ClienteIDColumn {
+            public global::System.Data.DataColumn AmortizacionIDColumn {
                 get {
-                    return this.columnClienteID;
+                    return this.columnAmortizacionID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
+            public global::System.Data.DataColumn PrestamoIDColumn {
                 get {
-                    return this.columnNombre;
+                    return this.columnPrestamoID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ApellidoColumn {
+            public global::System.Data.DataColumn NumeroCuotaColumn {
                 get {
-                    return this.columnApellido;
+                    return this.columnNumeroCuota;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CantidadMorasColumn {
+            public global::System.Data.DataColumn CuotaColumn {
                 get {
-                    return this.columnCantidadMoras;
+                    return this.columnCuota;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn InteresColumn {
+                get {
+                    return this.columnInteres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AmortizacionCapitalColumn {
+                get {
+                    return this.columnAmortizacionCapital;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SaldoPendienteColumn {
+                get {
+                    return this.columnSaldoPendiente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FechaCuotaColumn {
+                get {
+                    return this.columnFechaCuota;
                 }
             }
             
@@ -363,48 +403,59 @@ namespace Vista.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteRow this[int index] {
+            public AmortizacionRow this[int index] {
                 get {
-                    return ((sp_morasporclienteRow)(this.Rows[index]));
+                    return ((AmortizacionRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_morasporclienteRowChangeEventHandler sp_morasporclienteRowChanging;
+            public event AmortizacionRowChangeEventHandler AmortizacionRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_morasporclienteRowChangeEventHandler sp_morasporclienteRowChanged;
+            public event AmortizacionRowChangeEventHandler AmortizacionRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_morasporclienteRowChangeEventHandler sp_morasporclienteRowDeleting;
+            public event AmortizacionRowChangeEventHandler AmortizacionRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sp_morasporclienteRowChangeEventHandler sp_morasporclienteRowDeleted;
+            public event AmortizacionRowChangeEventHandler AmortizacionRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Addsp_morasporclienteRow(sp_morasporclienteRow row) {
+            public void AddAmortizacionRow(AmortizacionRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteRow Addsp_morasporclienteRow(int ClienteID, string Nombre, string Apellido, int CantidadMoras) {
-                sp_morasporclienteRow rowsp_morasporclienteRow = ((sp_morasporclienteRow)(this.NewRow()));
+            public AmortizacionRow AddAmortizacionRow(int PrestamoID, int NumeroCuota, decimal Cuota, decimal Interes, decimal AmortizacionCapital, decimal SaldoPendiente, System.DateTime FechaCuota) {
+                AmortizacionRow rowAmortizacionRow = ((AmortizacionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ClienteID,
-                        Nombre,
-                        Apellido,
-                        CantidadMoras};
-                rowsp_morasporclienteRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowsp_morasporclienteRow);
-                return rowsp_morasporclienteRow;
+                        null,
+                        PrestamoID,
+                        NumeroCuota,
+                        Cuota,
+                        Interes,
+                        AmortizacionCapital,
+                        SaldoPendiente,
+                        FechaCuota};
+                rowAmortizacionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAmortizacionRow);
+                return rowAmortizacionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public AmortizacionRow FindByAmortizacionID(int AmortizacionID) {
+                return ((AmortizacionRow)(this.Rows.Find(new object[] {
+                            AmortizacionID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                sp_morasporclienteDataTable cln = ((sp_morasporclienteDataTable)(base.Clone()));
+                AmortizacionDataTable cln = ((AmortizacionDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -412,61 +463,82 @@ namespace Vista.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new sp_morasporclienteDataTable();
+                return new AmortizacionDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnClienteID = base.Columns["ClienteID"];
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnApellido = base.Columns["Apellido"];
-                this.columnCantidadMoras = base.Columns["CantidadMoras"];
+                this.columnAmortizacionID = base.Columns["AmortizacionID"];
+                this.columnPrestamoID = base.Columns["PrestamoID"];
+                this.columnNumeroCuota = base.Columns["NumeroCuota"];
+                this.columnCuota = base.Columns["Cuota"];
+                this.columnInteres = base.Columns["Interes"];
+                this.columnAmortizacionCapital = base.Columns["AmortizacionCapital"];
+                this.columnSaldoPendiente = base.Columns["SaldoPendiente"];
+                this.columnFechaCuota = base.Columns["FechaCuota"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnClienteID = new global::System.Data.DataColumn("ClienteID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnClienteID);
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnApellido);
-                this.columnCantidadMoras = new global::System.Data.DataColumn("CantidadMoras", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCantidadMoras);
-                this.columnClienteID.AllowDBNull = false;
-                this.columnNombre.AllowDBNull = false;
-                this.columnNombre.MaxLength = 100;
-                this.columnApellido.AllowDBNull = false;
-                this.columnApellido.MaxLength = 100;
-                this.columnCantidadMoras.AllowDBNull = false;
+                this.columnAmortizacionID = new global::System.Data.DataColumn("AmortizacionID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmortizacionID);
+                this.columnPrestamoID = new global::System.Data.DataColumn("PrestamoID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrestamoID);
+                this.columnNumeroCuota = new global::System.Data.DataColumn("NumeroCuota", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNumeroCuota);
+                this.columnCuota = new global::System.Data.DataColumn("Cuota", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuota);
+                this.columnInteres = new global::System.Data.DataColumn("Interes", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInteres);
+                this.columnAmortizacionCapital = new global::System.Data.DataColumn("AmortizacionCapital", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmortizacionCapital);
+                this.columnSaldoPendiente = new global::System.Data.DataColumn("SaldoPendiente", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaldoPendiente);
+                this.columnFechaCuota = new global::System.Data.DataColumn("FechaCuota", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFechaCuota);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnAmortizacionID}, true));
+                this.columnAmortizacionID.AutoIncrement = true;
+                this.columnAmortizacionID.AutoIncrementSeed = -1;
+                this.columnAmortizacionID.AutoIncrementStep = -1;
+                this.columnAmortizacionID.AllowDBNull = false;
+                this.columnAmortizacionID.ReadOnly = true;
+                this.columnAmortizacionID.Unique = true;
+                this.columnPrestamoID.AllowDBNull = false;
+                this.columnNumeroCuota.AllowDBNull = false;
+                this.columnCuota.AllowDBNull = false;
+                this.columnInteres.AllowDBNull = false;
+                this.columnAmortizacionCapital.AllowDBNull = false;
+                this.columnSaldoPendiente.AllowDBNull = false;
+                this.columnFechaCuota.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteRow Newsp_morasporclienteRow() {
-                return ((sp_morasporclienteRow)(this.NewRow()));
+            public AmortizacionRow NewAmortizacionRow() {
+                return ((AmortizacionRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new sp_morasporclienteRow(builder);
+                return new AmortizacionRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(sp_morasporclienteRow);
+                return typeof(AmortizacionRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.sp_morasporclienteRowChanged != null)) {
-                    this.sp_morasporclienteRowChanged(this, new sp_morasporclienteRowChangeEvent(((sp_morasporclienteRow)(e.Row)), e.Action));
+                if ((this.AmortizacionRowChanged != null)) {
+                    this.AmortizacionRowChanged(this, new AmortizacionRowChangeEvent(((AmortizacionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -474,8 +546,8 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.sp_morasporclienteRowChanging != null)) {
-                    this.sp_morasporclienteRowChanging(this, new sp_morasporclienteRowChangeEvent(((sp_morasporclienteRow)(e.Row)), e.Action));
+                if ((this.AmortizacionRowChanging != null)) {
+                    this.AmortizacionRowChanging(this, new AmortizacionRowChangeEvent(((AmortizacionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -483,8 +555,8 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.sp_morasporclienteRowDeleted != null)) {
-                    this.sp_morasporclienteRowDeleted(this, new sp_morasporclienteRowChangeEvent(((sp_morasporclienteRow)(e.Row)), e.Action));
+                if ((this.AmortizacionRowDeleted != null)) {
+                    this.AmortizacionRowDeleted(this, new AmortizacionRowChangeEvent(((AmortizacionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -492,14 +564,14 @@ namespace Vista.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.sp_morasporclienteRowDeleting != null)) {
-                    this.sp_morasporclienteRowDeleting(this, new sp_morasporclienteRowChangeEvent(((sp_morasporclienteRow)(e.Row)), e.Action));
+                if ((this.AmortizacionRowDeleting != null)) {
+                    this.AmortizacionRowDeleting(this, new AmortizacionRowChangeEvent(((AmortizacionRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Removesp_morasporclienteRow(sp_morasporclienteRow row) {
+            public void RemoveAmortizacionRow(AmortizacionRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -508,7 +580,7 @@ namespace Vista.Reportes {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Reportes ds = new DS_Reportes();
+                DS_Reporte1 ds = new DS_Reporte1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -526,7 +598,7 @@ namespace Vista.Reportes {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "sp_morasporclienteDataTable";
+                attribute2.FixedValue = "AmortizacionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -570,58 +642,102 @@ namespace Vista.Reportes {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class sp_morasporclienteRow : global::System.Data.DataRow {
+        public partial class AmortizacionRow : global::System.Data.DataRow {
             
-            private sp_morasporclienteDataTable tablesp_morasporcliente;
+            private AmortizacionDataTable tableAmortizacion;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sp_morasporclienteRow(global::System.Data.DataRowBuilder rb) : 
+            internal AmortizacionRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablesp_morasporcliente = ((sp_morasporclienteDataTable)(this.Table));
+                this.tableAmortizacion = ((AmortizacionDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ClienteID {
+            public int AmortizacionID {
                 get {
-                    return ((int)(this[this.tablesp_morasporcliente.ClienteIDColumn]));
+                    return ((int)(this[this.tableAmortizacion.AmortizacionIDColumn]));
                 }
                 set {
-                    this[this.tablesp_morasporcliente.ClienteIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Nombre {
-                get {
-                    return ((string)(this[this.tablesp_morasporcliente.NombreColumn]));
-                }
-                set {
-                    this[this.tablesp_morasporcliente.NombreColumn] = value;
+                    this[this.tableAmortizacion.AmortizacionIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Apellido {
+            public int PrestamoID {
                 get {
-                    return ((string)(this[this.tablesp_morasporcliente.ApellidoColumn]));
+                    return ((int)(this[this.tableAmortizacion.PrestamoIDColumn]));
                 }
                 set {
-                    this[this.tablesp_morasporcliente.ApellidoColumn] = value;
+                    this[this.tableAmortizacion.PrestamoIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int CantidadMoras {
+            public int NumeroCuota {
                 get {
-                    return ((int)(this[this.tablesp_morasporcliente.CantidadMorasColumn]));
+                    return ((int)(this[this.tableAmortizacion.NumeroCuotaColumn]));
                 }
                 set {
-                    this[this.tablesp_morasporcliente.CantidadMorasColumn] = value;
+                    this[this.tableAmortizacion.NumeroCuotaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Cuota {
+                get {
+                    return ((decimal)(this[this.tableAmortizacion.CuotaColumn]));
+                }
+                set {
+                    this[this.tableAmortizacion.CuotaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Interes {
+                get {
+                    return ((decimal)(this[this.tableAmortizacion.InteresColumn]));
+                }
+                set {
+                    this[this.tableAmortizacion.InteresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal AmortizacionCapital {
+                get {
+                    return ((decimal)(this[this.tableAmortizacion.AmortizacionCapitalColumn]));
+                }
+                set {
+                    this[this.tableAmortizacion.AmortizacionCapitalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal SaldoPendiente {
+                get {
+                    return ((decimal)(this[this.tableAmortizacion.SaldoPendienteColumn]));
+                }
+                set {
+                    this[this.tableAmortizacion.SaldoPendienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime FechaCuota {
+                get {
+                    return ((global::System.DateTime)(this[this.tableAmortizacion.FechaCuotaColumn]));
+                }
+                set {
+                    this[this.tableAmortizacion.FechaCuotaColumn] = value;
                 }
             }
         }
@@ -630,22 +746,22 @@ namespace Vista.Reportes {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class sp_morasporclienteRowChangeEvent : global::System.EventArgs {
+        public class AmortizacionRowChangeEvent : global::System.EventArgs {
             
-            private sp_morasporclienteRow eventRow;
+            private AmortizacionRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteRowChangeEvent(sp_morasporclienteRow row, global::System.Data.DataRowAction action) {
+            public AmortizacionRowChangeEvent(AmortizacionRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_morasporclienteRow Row {
+            public AmortizacionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -661,7 +777,7 @@ namespace Vista.Reportes {
         }
     }
 }
-namespace Vista.Reportes.DS_ReportesTableAdapters {
+namespace Vista.Reportes.DS_Reporte1TableAdapters {
     
     
     /// <summary>
@@ -673,7 +789,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class sp_morasporclienteTableAdapter : global::System.ComponentModel.Component {
+    public partial class AmortizacionTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -687,7 +803,7 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public sp_morasporclienteTableAdapter() {
+        public AmortizacionTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -784,12 +900,61 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "sp_morasporcliente";
-            tableMapping.ColumnMappings.Add("ClienteID", "ClienteID");
-            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
-            tableMapping.ColumnMappings.Add("Apellido", "Apellido");
-            tableMapping.ColumnMappings.Add("CantidadMoras", "CantidadMoras");
+            tableMapping.DataSetTable = "Amortizacion";
+            tableMapping.ColumnMappings.Add("AmortizacionID", "AmortizacionID");
+            tableMapping.ColumnMappings.Add("PrestamoID", "PrestamoID");
+            tableMapping.ColumnMappings.Add("NumeroCuota", "NumeroCuota");
+            tableMapping.ColumnMappings.Add("Cuota", "Cuota");
+            tableMapping.ColumnMappings.Add("Interes", "Interes");
+            tableMapping.ColumnMappings.Add("AmortizacionCapital", "AmortizacionCapital");
+            tableMapping.ColumnMappings.Add("SaldoPendiente", "SaldoPendiente");
+            tableMapping.ColumnMappings.Add("FechaCuota", "FechaCuota");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Amortizacion] WHERE (([AmortizacionID] = @Original_AmortizacionID) AND ([PrestamoID] = @Original_PrestamoID) AND ([NumeroCuota] = @Original_NumeroCuota) AND ([Cuota] = @Original_Cuota) AND ([Interes] = @Original_Interes) AND ([AmortizacionCapital] = @Original_AmortizacionCapital) AND ([SaldoPendiente] = @Original_SaldoPendiente) AND ([FechaCuota] = @Original_FechaCuota))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AmortizacionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AmortizacionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PrestamoID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrestamoID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NumeroCuota", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NumeroCuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cuota", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Cuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Interes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Interes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AmortizacionCapital", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "AmortizacionCapital", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SaldoPendiente", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "SaldoPendiente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FechaCuota", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FechaCuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Amortizacion] ([PrestamoID], [NumeroCuota], [Cuota], [Interes], [AmortizacionCapital], [SaldoPendiente], [FechaCuota]) VALUES (@PrestamoID, @NumeroCuota, @Cuota, @Interes, @AmortizacionCapital, @SaldoPendiente, @FechaCuota);
+SELECT AmortizacionID, PrestamoID, NumeroCuota, Cuota, Interes, AmortizacionCapital, SaldoPendiente, FechaCuota FROM Amortizacion WHERE (AmortizacionID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrestamoID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrestamoID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NumeroCuota", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NumeroCuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cuota", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Cuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Interes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Interes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AmortizacionCapital", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "AmortizacionCapital", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaldoPendiente", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "SaldoPendiente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FechaCuota", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FechaCuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Amortizacion] SET [PrestamoID] = @PrestamoID, [NumeroCuota] = @NumeroCuota, [Cuota] = @Cuota, [Interes] = @Interes, [AmortizacionCapital] = @AmortizacionCapital, [SaldoPendiente] = @SaldoPendiente, [FechaCuota] = @FechaCuota WHERE (([AmortizacionID] = @Original_AmortizacionID) AND ([PrestamoID] = @Original_PrestamoID) AND ([NumeroCuota] = @Original_NumeroCuota) AND ([Cuota] = @Original_Cuota) AND ([Interes] = @Original_Interes) AND ([AmortizacionCapital] = @Original_AmortizacionCapital) AND ([SaldoPendiente] = @Original_SaldoPendiente) AND ([FechaCuota] = @Original_FechaCuota));
+SELECT AmortizacionID, PrestamoID, NumeroCuota, Cuota, Interes, AmortizacionCapital, SaldoPendiente, FechaCuota FROM Amortizacion WHERE (AmortizacionID = @AmortizacionID)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrestamoID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrestamoID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NumeroCuota", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NumeroCuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cuota", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Cuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Interes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Interes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AmortizacionCapital", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "AmortizacionCapital", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaldoPendiente", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "SaldoPendiente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FechaCuota", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FechaCuota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AmortizacionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AmortizacionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PrestamoID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrestamoID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NumeroCuota", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NumeroCuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cuota", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Cuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Interes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "Interes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AmortizacionCapital", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "AmortizacionCapital", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SaldoPendiente", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 15, 2, "SaldoPendiente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FechaCuota", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FechaCuota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AmortizacionID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "AmortizacionID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -805,24 +970,20 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.sp_morasporcliente";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Criterio", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].CommandText = "SELECT AmortizacionID, PrestamoID, NumeroCuota, Cuota, Interes, AmortizacionCapit" +
+                "al, SaldoPendiente, FechaCuota\r\nFROM     Amortizacion\r\nWHERE  (PrestamoID = @Pre" +
+                "stamoID)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrestamoID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PrestamoID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_Reportes.sp_morasporclienteDataTable dataTable, string Criterio) {
+        public virtual int Fill(DS_Reporte1.AmortizacionDataTable dataTable, int PrestamoID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((Criterio == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Criterio));
-            }
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PrestamoID));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -834,17 +995,41 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_Reportes.sp_morasporclienteDataTable GetData(string Criterio) {
+        public virtual DS_Reporte1.AmortizacionDataTable GetData(int PrestamoID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((Criterio == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Criterio));
-            }
-            DS_Reportes.sp_morasporclienteDataTable dataTable = new DS_Reportes.sp_morasporclienteDataTable();
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PrestamoID));
+            DS_Reporte1.AmortizacionDataTable dataTable = new DS_Reporte1.AmortizacionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Reporte1.AmortizacionDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DS_Reporte1 dataSet) {
+            return this.Adapter.Update(dataSet, "Amortizacion");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
         }
     }
     
@@ -860,6 +1045,8 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private AmortizacionTableAdapter _amortizacionTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -872,6 +1059,20 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public AmortizacionTableAdapter AmortizacionTableAdapter {
+            get {
+                return this._amortizacionTableAdapter;
+            }
+            set {
+                this._amortizacionTableAdapter = value;
             }
         }
         
@@ -894,6 +1095,10 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._amortizacionTableAdapter != null) 
+                            && (this._amortizacionTableAdapter.Connection != null))) {
+                    return this._amortizacionTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -907,6 +1112,9 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._amortizacionTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -916,8 +1124,17 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DS_Reportes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_Reporte1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._amortizacionTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Amortizacion.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._amortizacionTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -926,8 +1143,16 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DS_Reportes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_Reporte1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._amortizacionTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Amortizacion.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._amortizacionTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -936,8 +1161,16 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DS_Reportes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_Reporte1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._amortizacionTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Amortizacion.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._amortizacionTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -970,12 +1203,17 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DS_Reportes dataSet) {
+        public virtual int UpdateAll(DS_Reporte1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._amortizacionTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._amortizacionTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
+                        "sma cadena de conexión.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1009,6 +1247,15 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._amortizacionTableAdapter != null)) {
+                    revertConnections.Add(this._amortizacionTableAdapter, this._amortizacionTableAdapter.Connection);
+                    this._amortizacionTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._amortizacionTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._amortizacionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._amortizacionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._amortizacionTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1066,6 +1313,10 @@ namespace Vista.Reportes.DS_ReportesTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._amortizacionTableAdapter != null)) {
+                    this._amortizacionTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._amortizacionTableAdapter]));
+                    this._amortizacionTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
